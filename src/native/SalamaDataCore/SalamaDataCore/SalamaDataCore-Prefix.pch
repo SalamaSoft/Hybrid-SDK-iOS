@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'SalamaDataCore' target in the 'SalamaDataCore' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

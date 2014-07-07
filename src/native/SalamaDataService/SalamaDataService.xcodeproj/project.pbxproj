@@ -1,0 +1,830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE910B5B173E025F00D71024 /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = EE910B59173E025F00D71024 /* SSLog.h */; };
+		EE910B5C173E025F00D71024 /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = EE910B5A173E025F00D71024 /* SSLog.m */; };
+		EEB6AC561618831D007BC6A9 /* ExtraIndexManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEB6AC541618831D007BC6A9 /* ExtraIndexManager.h */; };
+		EEB6AC571618831D007BC6A9 /* ExtraIndexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEB6AC551618831D007BC6A9 /* ExtraIndexManager.m */; };
+		EECC20CB160A770B00978174 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECC20CA160A770B00978174 /* Foundation.framework */; };
+		EECC20D9160A777E00978174 /* SalamaDataService.h in Headers */ = {isa = PBXBuildFile; fileRef = EECC20D7160A777E00978174 /* SalamaDataService.h */; };
+		EECC20DA160A777E00978174 /* SalamaDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = EECC20D8160A777E00978174 /* SalamaDataService.m */; };
+		EECDC319161D7C8A0039DE8A /* SalamaDataServiceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC317161D7C8A0039DE8A /* SalamaDataServiceConfig.h */; };
+		EECDC31A161D7C8A0039DE8A /* SalamaDataServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC318161D7C8A0039DE8A /* SalamaDataServiceConfig.m */; };
+		EECDC321161D86880039DE8A /* ResourceDownloadTaskService.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC31F161D86870039DE8A /* ResourceDownloadTaskService.h */; };
+		EECDC322161D86880039DE8A /* ResourceDownloadTaskService.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC320161D86870039DE8A /* ResourceDownloadTaskService.m */; };
+		EECDC328161F15DD0039DE8A /* LocalQueryParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC326161F15DD0039DE8A /* LocalQueryParam.h */; };
+		EECDC329161F15DD0039DE8A /* LocalQueryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC327161F15DD0039DE8A /* LocalQueryParam.m */; };
+		EED282BD1616AF3B006C7C03 /* DataQueryParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282B21616AF3B006C7C03 /* DataQueryParam.h */; };
+		EED282BE1616AF3B006C7C03 /* DataQueryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282B31616AF3B006C7C03 /* DataQueryParam.m */; };
+		EED282C11616AF3B006C7C03 /* LocalStorageParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282B61616AF3B006C7C03 /* LocalStorageParam.h */; };
+		EED282C21616AF3B006C7C03 /* LocalStorageParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282B71616AF3B006C7C03 /* LocalStorageParam.m */; };
+		EED282C31616AF3B006C7C03 /* WebServiceParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282B81616AF3B006C7C03 /* WebServiceParam.h */; };
+		EED282C41616AF3B006C7C03 /* WebServiceParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282B91616AF3B006C7C03 /* WebServiceParam.m */; };
+		EED282C61616AF3B006C7C03 /* WebService.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282BB1616AF3B006C7C03 /* WebService.h */; };
+		EED282C71616AF3B006C7C03 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282BC1616AF3B006C7C03 /* WebService.m */; };
+		EED283521616AF6F006C7C03 /* DataTableSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282CC1616AF6E006C7C03 /* DataTableSetting.h */; };
+		EED283531616AF6F006C7C03 /* DataTableSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282CD1616AF6E006C7C03 /* DataTableSetting.m */; };
+		EED283541616AF6F006C7C03 /* DBDataSqlConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282CE1616AF6E006C7C03 /* DBDataSqlConsts.h */; };
+		EED283551616AF6F006C7C03 /* DBDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282CF1616AF6E006C7C03 /* DBDataUtil.h */; };
+		EED283561616AF6F006C7C03 /* DBDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282D01616AF6E006C7C03 /* DBDataUtil.m */; };
+		EED283571616AF6F006C7C03 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282D11616AF6E006C7C03 /* DBManager.h */; };
+		EED283581616AF6F006C7C03 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282D21616AF6E006C7C03 /* DBManager.m */; };
+		EED283591616AF6F006C7C03 /* BaseTypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282D51616AF6E006C7C03 /* BaseTypeConverter.h */; };
+		EED2835A1616AF6F006C7C03 /* BaseTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282D61616AF6E006C7C03 /* BaseTypeConverter.m */; };
+		EED2835B1616AF6F006C7C03 /* BaseTypesMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282D71616AF6E006C7C03 /* BaseTypesMapping.h */; };
+		EED2835C1616AF6F006C7C03 /* BaseTypesMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282D81616AF6E006C7C03 /* BaseTypesMapping.m */; };
+		EED2835D1616AF6F006C7C03 /* SimpleMetoXML.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282D91616AF6E006C7C03 /* SimpleMetoXML.h */; };
+		EED2835E1616AF6F006C7C03 /* SimpleMetoXML.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282DA1616AF6E006C7C03 /* SimpleMetoXML.m */; };
+		EED283601616AF6F006C7C03 /* SalamaDataCore.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282DC1616AF6E006C7C03 /* SalamaDataCore.h */; };
+		EED283611616AF6F006C7C03 /* SqliteException.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282DE1616AF6E006C7C03 /* SqliteException.h */; };
+		EED283621616AF6F006C7C03 /* SqliteException.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282DF1616AF6E006C7C03 /* SqliteException.m */; };
+		EED283631616AF6F006C7C03 /* SqliteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282E01616AF6E006C7C03 /* SqliteUtil.h */; };
+		EED283641616AF6F006C7C03 /* SqliteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282E11616AF6E006C7C03 /* SqliteUtil.m */; };
+		EED283651616AF6F006C7C03 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282E51616AF6E006C7C03 /* GTMBase64.h */; };
+		EED283661616AF6F006C7C03 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282E61616AF6E006C7C03 /* GTMBase64.m */; };
+		EED283671616AF6F006C7C03 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282E71616AF6E006C7C03 /* GTMDefines.h */; };
+		EED283681616AF6F006C7C03 /* PropertyInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282E81616AF6E006C7C03 /* PropertyInfo.h */; };
+		EED283691616AF6F006C7C03 /* PropertyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282E91616AF6E006C7C03 /* PropertyInfo.m */; };
+		EED2836A1616AF6F006C7C03 /* PropertyInfoUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282EA1616AF6E006C7C03 /* PropertyInfoUtil.h */; };
+		EED2836B1616AF6F006C7C03 /* PropertyInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282EB1616AF6E006C7C03 /* PropertyInfoUtil.m */; };
+		EED2836C1616AF6F006C7C03 /* XmlContentEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282EC1616AF6E006C7C03 /* XmlContentEncoder.h */; };
+		EED2836D1616AF6F006C7C03 /* XmlContentEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282ED1616AF6E006C7C03 /* XmlContentEncoder.m */; };
+		EED2836E1616AF6F006C7C03 /* HostReachabilityUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282F31616AF6E006C7C03 /* HostReachabilityUtil.h */; };
+		EED2836F1616AF6F006C7C03 /* HostReachabilityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282F41616AF6E006C7C03 /* HostReachabilityUtil.m */; };
+		EED283701616AF6F006C7C03 /* BasicMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282F71616AF6E006C7C03 /* BasicMethod.h */; };
+		EED283711616AF6F006C7C03 /* BasicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282F81616AF6E006C7C03 /* BasicMethod.m */; };
+		EED283721616AF6F006C7C03 /* DeleteMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282F91616AF6E006C7C03 /* DeleteMethod.h */; };
+		EED283731616AF6F006C7C03 /* DeleteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282FA1616AF6E006C7C03 /* DeleteMethod.m */; };
+		EED283741616AF6F006C7C03 /* GetMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282FB1616AF6E006C7C03 /* GetMethod.h */; };
+		EED283751616AF6F006C7C03 /* GetMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282FC1616AF6E006C7C03 /* GetMethod.m */; };
+		EED283761616AF6F006C7C03 /* HttpMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282FD1616AF6E006C7C03 /* HttpMethod.h */; };
+		EED283771616AF6F006C7C03 /* MultipartMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED282FE1616AF6E006C7C03 /* MultipartMethod.h */; };
+		EED283781616AF6F006C7C03 /* MultipartMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED282FF1616AF6E006C7C03 /* MultipartMethod.m */; };
+		EED283791616AF6F006C7C03 /* PostMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283001616AF6E006C7C03 /* PostMethod.h */; };
+		EED2837A1616AF6F006C7C03 /* PostMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283011616AF6E006C7C03 /* PostMethod.m */; };
+		EED2837B1616AF6F006C7C03 /* PutMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283021616AF6E006C7C03 /* PutMethod.h */; };
+		EED2837C1616AF6F006C7C03 /* PutMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283031616AF6E006C7C03 /* PutMethod.m */; };
+		EED2837D1616AF6F006C7C03 /* FilePart.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283051616AF6E006C7C03 /* FilePart.h */; };
+		EED2837E1616AF6F006C7C03 /* FilePart.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283061616AF6E006C7C03 /* FilePart.m */; };
+		EED2837F1616AF6F006C7C03 /* Part.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283071616AF6E006C7C03 /* Part.h */; };
+		EED283801616AF6F006C7C03 /* StringPart.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283081616AF6E006C7C03 /* StringPart.h */; };
+		EED283811616AF6F006C7C03 /* StringPart.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283091616AF6E006C7C03 /* StringPart.m */; };
+		EED283821616AF6F006C7C03 /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2830B1616AF6E006C7C03 /* Constants.h */; };
+		EED283831616AF6F006C7C03 /* DelegateMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2830C1616AF6E006C7C03 /* DelegateMessenger.h */; };
+		EED283841616AF6F006C7C03 /* DelegateMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2830D1616AF6E006C7C03 /* DelegateMessenger.m */; };
+		EED283851616AF6F006C7C03 /* HttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2830E1616AF6E006C7C03 /* HttpClient.h */; };
+		EED283861616AF6F006C7C03 /* HttpClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2830F1616AF6E006C7C03 /* HttpClientDelegate.h */; };
+		EED283871616AF6F006C7C03 /* HttpClientGzipUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283101616AF6E006C7C03 /* HttpClientGzipUtility.h */; };
+		EED283881616AF6F006C7C03 /* HttpClientGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283111616AF6E006C7C03 /* HttpClientGzipUtility.m */; };
+		EED283891616AF6F006C7C03 /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283121616AF6E006C7C03 /* HttpResponse.h */; };
+		EED2838A1616AF6F006C7C03 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283131616AF6E006C7C03 /* HttpResponse.m */; };
+		EED2838B1616AF6F006C7C03 /* IpAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = EED283151616AF6E006C7C03 /* IpAddress.c */; };
+		EED2838C1616AF6F006C7C03 /* IpAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283161616AF6E006C7C03 /* IpAddress.h */; };
+		EED2838D1616AF6F006C7C03 /* IpAddressHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283171616AF6E006C7C03 /* IpAddressHelper.h */; };
+		EED2838E1616AF6F006C7C03 /* IpAddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283181616AF6E006C7C03 /* IpAddressHelper.m */; };
+		EED2838F1616AF6F006C7C03 /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2831A1616AF6E006C7C03 /* Reachability.h */; };
+		EED283901616AF6F006C7C03 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2831B1616AF6E006C7C03 /* Reachability.m */; };
+		EED283911616AF6F006C7C03 /* ResourceFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2831C1616AF6E006C7C03 /* ResourceFileManager.h */; };
+		EED283921616AF6F006C7C03 /* ResourceFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EED2831D1616AF6E006C7C03 /* ResourceFileManager.m */; };
+		EED283941616AF6F006C7C03 /* SalamaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2831F1616AF6E006C7C03 /* SalamaUtils.h */; };
+		EED283951616AF6F006C7C03 /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283201616AF6E006C7C03 /* TimeUtil.h */; };
+		EED283961616AF6F006C7C03 /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283211616AF6E006C7C03 /* TimeUtil.m */; };
+		EED283971616AF6F006C7C03 /* URLStringEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283221616AF6E006C7C03 /* URLStringEncoder.h */; };
+		EED283981616AF6F006C7C03 /* URLStringEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283231616AF6E006C7C03 /* URLStringEncoder.m */; };
+		EED283991616AF6F006C7C03 /* WebServiceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283241616AF6E006C7C03 /* WebServiceUtil.h */; };
+		EED2839A1616AF6F006C7C03 /* WebServiceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283251616AF6E006C7C03 /* WebServiceUtil.m */; };
+		EED2839B1616AF6F006C7C03 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283281616AF6E006C7C03 /* crypt.h */; };
+		EED2839C1616AF6F006C7C03 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EED283291616AF6E006C7C03 /* ioapi.c */; };
+		EED2839D1616AF6F006C7C03 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2832A1616AF6E006C7C03 /* ioapi.h */; };
+		EED2839E1616AF6F006C7C03 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EED2832B1616AF6E006C7C03 /* mztools.c */; };
+		EED2839F1616AF6F006C7C03 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2832C1616AF6E006C7C03 /* mztools.h */; };
+		EED283A01616AF6F006C7C03 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = EED2832D1616AF6E006C7C03 /* unzip.c */; };
+		EED283A11616AF6F006C7C03 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2832E1616AF6E006C7C03 /* unzip.h */; };
+		EED283A21616AF6F006C7C03 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EED2832F1616AF6E006C7C03 /* zip.c */; };
+		EED283A31616AF6F006C7C03 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283301616AF6E006C7C03 /* zip.h */; };
+		EED283A41616AF6F006C7C03 /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283311616AF6E006C7C03 /* ZipArchive.h */; };
+		EED283A51616AF6F006C7C03 /* ZipArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = EED283321616AF6E006C7C03 /* ZipArchive.mm */; };
+		EED283BD1616B03A006C7C03 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EED283BC1616B03A006C7C03 /* SystemConfiguration.framework */; };
+		EED283BF1616B040006C7C03 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EED283BE1616B040006C7C03 /* libxml2.dylib */; };
+		EED283C11616B045006C7C03 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EED283C01616B045006C7C03 /* libz.dylib */; };
+		EED283C31616B051006C7C03 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EED283C21616B051006C7C03 /* libsqlite3.dylib */; };
+		EED283C61616B5D9006C7C03 /* LocalStorageService.h in Headers */ = {isa = PBXBuildFile; fileRef = EED283C41616B5D9006C7C03 /* LocalStorageService.h */; };
+		EED283C71616B5D9006C7C03 /* LocalStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = EED283C51616B5D9006C7C03 /* LocalStorageService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE910B59173E025F00D71024 /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
+		EE910B5A173E025F00D71024 /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
+		EEB6AC541618831D007BC6A9 /* ExtraIndexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraIndexManager.h; sourceTree = "<group>"; };
+		EEB6AC551618831D007BC6A9 /* ExtraIndexManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraIndexManager.m; sourceTree = "<group>"; };
+		EECC20C7160A770B00978174 /* libSalamaDataService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSalamaDataService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECC20CA160A770B00978174 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EECC20CE160A770B00978174 /* SalamaDataService-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SalamaDataService-Prefix.pch"; sourceTree = "<group>"; };
+		EECC20D7160A777E00978174 /* SalamaDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataService.h; sourceTree = "<group>"; };
+		EECC20D8160A777E00978174 /* SalamaDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaDataService.m; sourceTree = "<group>"; };
+		EECDC311161C232F0039DE8A /* ResourceDownloadHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceDownloadHandler.h; sourceTree = "<group>"; };
+		EECDC317161D7C8A0039DE8A /* SalamaDataServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataServiceConfig.h; sourceTree = "<group>"; };
+		EECDC318161D7C8A0039DE8A /* SalamaDataServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaDataServiceConfig.m; sourceTree = "<group>"; };
+		EECDC31F161D86870039DE8A /* ResourceDownloadTaskService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceDownloadTaskService.h; sourceTree = "<group>"; };
+		EECDC320161D86870039DE8A /* ResourceDownloadTaskService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceDownloadTaskService.m; sourceTree = "<group>"; };
+		EECDC326161F15DD0039DE8A /* LocalQueryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalQueryParam.h; sourceTree = "<group>"; };
+		EECDC327161F15DD0039DE8A /* LocalQueryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalQueryParam.m; sourceTree = "<group>"; };
+		EED282B21616AF3B006C7C03 /* DataQueryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQueryParam.h; sourceTree = "<group>"; };
+		EED282B31616AF3B006C7C03 /* DataQueryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQueryParam.m; sourceTree = "<group>"; };
+		EED282B61616AF3B006C7C03 /* LocalStorageParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageParam.h; sourceTree = "<group>"; };
+		EED282B71616AF3B006C7C03 /* LocalStorageParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageParam.m; sourceTree = "<group>"; };
+		EED282B81616AF3B006C7C03 /* WebServiceParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceParam.h; sourceTree = "<group>"; };
+		EED282B91616AF3B006C7C03 /* WebServiceParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceParam.m; sourceTree = "<group>"; };
+		EED282BB1616AF3B006C7C03 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		EED282BC1616AF3B006C7C03 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+		EED282CC1616AF6E006C7C03 /* DataTableSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableSetting.h; sourceTree = "<group>"; };
+		EED282CD1616AF6E006C7C03 /* DataTableSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableSetting.m; sourceTree = "<group>"; };
+		EED282CE1616AF6E006C7C03 /* DBDataSqlConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDataSqlConsts.h; sourceTree = "<group>"; };
+		EED282CF1616AF6E006C7C03 /* DBDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDataUtil.h; sourceTree = "<group>"; };
+		EED282D01616AF6E006C7C03 /* DBDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDataUtil.m; sourceTree = "<group>"; };
+		EED282D11616AF6E006C7C03 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		EED282D21616AF6E006C7C03 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		EED282D51616AF6E006C7C03 /* BaseTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypeConverter.h; sourceTree = "<group>"; };
+		EED282D61616AF6E006C7C03 /* BaseTypeConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTypeConverter.m; sourceTree = "<group>"; };
+		EED282D71616AF6E006C7C03 /* BaseTypesMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypesMapping.h; sourceTree = "<group>"; };
+		EED282D81616AF6E006C7C03 /* BaseTypesMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTypesMapping.m; sourceTree = "<group>"; };
+		EED282D91616AF6E006C7C03 /* SimpleMetoXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMetoXML.h; sourceTree = "<group>"; };
+		EED282DA1616AF6E006C7C03 /* SimpleMetoXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMetoXML.m; sourceTree = "<group>"; };
+		EED282DC1616AF6E006C7C03 /* SalamaDataCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataCore.h; sourceTree = "<group>"; };
+		EED282DE1616AF6E006C7C03 /* SqliteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteException.h; sourceTree = "<group>"; };
+		EED282DF1616AF6E006C7C03 /* SqliteException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteException.m; sourceTree = "<group>"; };
+		EED282E01616AF6E006C7C03 /* SqliteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteUtil.h; sourceTree = "<group>"; };
+		EED282E11616AF6E006C7C03 /* SqliteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteUtil.m; sourceTree = "<group>"; };
+		EED282E51616AF6E006C7C03 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		EED282E61616AF6E006C7C03 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		EED282E71616AF6E006C7C03 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		EED282E81616AF6E006C7C03 /* PropertyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyInfo.h; sourceTree = "<group>"; };
+		EED282E91616AF6E006C7C03 /* PropertyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfo.m; sourceTree = "<group>"; };
+		EED282EA1616AF6E006C7C03 /* PropertyInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyInfoUtil.h; sourceTree = "<group>"; };
+		EED282EB1616AF6E006C7C03 /* PropertyInfoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfoUtil.m; sourceTree = "<group>"; };
+		EED282EC1616AF6E006C7C03 /* XmlContentEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlContentEncoder.h; sourceTree = "<group>"; };
+		EED282ED1616AF6E006C7C03 /* XmlContentEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlContentEncoder.m; sourceTree = "<group>"; };
+		EED282F31616AF6E006C7C03 /* HostReachabilityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostReachabilityUtil.h; sourceTree = "<group>"; };
+		EED282F41616AF6E006C7C03 /* HostReachabilityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostReachabilityUtil.m; sourceTree = "<group>"; };
+		EED282F71616AF6E006C7C03 /* BasicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMethod.h; sourceTree = "<group>"; };
+		EED282F81616AF6E006C7C03 /* BasicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMethod.m; sourceTree = "<group>"; };
+		EED282F91616AF6E006C7C03 /* DeleteMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteMethod.h; sourceTree = "<group>"; };
+		EED282FA1616AF6E006C7C03 /* DeleteMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteMethod.m; sourceTree = "<group>"; };
+		EED282FB1616AF6E006C7C03 /* GetMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMethod.h; sourceTree = "<group>"; };
+		EED282FC1616AF6E006C7C03 /* GetMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMethod.m; sourceTree = "<group>"; };
+		EED282FD1616AF6E006C7C03 /* HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMethod.h; sourceTree = "<group>"; };
+		EED282FE1616AF6E006C7C03 /* MultipartMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMethod.h; sourceTree = "<group>"; };
+		EED282FF1616AF6E006C7C03 /* MultipartMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMethod.m; sourceTree = "<group>"; };
+		EED283001616AF6E006C7C03 /* PostMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostMethod.h; sourceTree = "<group>"; };
+		EED283011616AF6E006C7C03 /* PostMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostMethod.m; sourceTree = "<group>"; };
+		EED283021616AF6E006C7C03 /* PutMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutMethod.h; sourceTree = "<group>"; };
+		EED283031616AF6E006C7C03 /* PutMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PutMethod.m; sourceTree = "<group>"; };
+		EED283051616AF6E006C7C03 /* FilePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePart.h; sourceTree = "<group>"; };
+		EED283061616AF6E006C7C03 /* FilePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilePart.m; sourceTree = "<group>"; };
+		EED283071616AF6E006C7C03 /* Part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
+		EED283081616AF6E006C7C03 /* StringPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringPart.h; sourceTree = "<group>"; };
+		EED283091616AF6E006C7C03 /* StringPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringPart.m; sourceTree = "<group>"; };
+		EED2830B1616AF6E006C7C03 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		EED2830C1616AF6E006C7C03 /* DelegateMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateMessenger.h; sourceTree = "<group>"; };
+		EED2830D1616AF6E006C7C03 /* DelegateMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateMessenger.m; sourceTree = "<group>"; };
+		EED2830E1616AF6E006C7C03 /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		EED2830F1616AF6E006C7C03 /* HttpClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientDelegate.h; sourceTree = "<group>"; };
+		EED283101616AF6E006C7C03 /* HttpClientGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientGzipUtility.h; sourceTree = "<group>"; };
+		EED283111616AF6E006C7C03 /* HttpClientGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClientGzipUtility.m; sourceTree = "<group>"; };
+		EED283121616AF6E006C7C03 /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		EED283131616AF6E006C7C03 /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		EED283151616AF6E006C7C03 /* IpAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IpAddress.c; sourceTree = "<group>"; };
+		EED283161616AF6E006C7C03 /* IpAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpAddress.h; sourceTree = "<group>"; };
+		EED283171616AF6E006C7C03 /* IpAddressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpAddressHelper.h; sourceTree = "<group>"; };
+		EED283181616AF6E006C7C03 /* IpAddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpAddressHelper.m; sourceTree = "<group>"; };
+		EED2831A1616AF6E006C7C03 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EED2831B1616AF6E006C7C03 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EED2831C1616AF6E006C7C03 /* ResourceFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceFileManager.h; sourceTree = "<group>"; };
+		EED2831D1616AF6E006C7C03 /* ResourceFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceFileManager.m; sourceTree = "<group>"; };
+		EED2831F1616AF6E006C7C03 /* SalamaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaUtils.h; sourceTree = "<group>"; };
+		EED283201616AF6E006C7C03 /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		EED283211616AF6E006C7C03 /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
+		EED283221616AF6E006C7C03 /* URLStringEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLStringEncoder.h; sourceTree = "<group>"; };
+		EED283231616AF6E006C7C03 /* URLStringEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLStringEncoder.m; sourceTree = "<group>"; };
+		EED283241616AF6E006C7C03 /* WebServiceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceUtil.h; sourceTree = "<group>"; };
+		EED283251616AF6E006C7C03 /* WebServiceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceUtil.m; sourceTree = "<group>"; };
+		EED283281616AF6E006C7C03 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		EED283291616AF6E006C7C03 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		EED2832A1616AF6E006C7C03 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		EED2832B1616AF6E006C7C03 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		EED2832C1616AF6E006C7C03 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		EED2832D1616AF6E006C7C03 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		EED2832E1616AF6E006C7C03 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		EED2832F1616AF6E006C7C03 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		EED283301616AF6E006C7C03 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		EED283311616AF6E006C7C03 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		EED283321616AF6E006C7C03 /* ZipArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ZipArchive.mm; sourceTree = "<group>"; };
+		EED283BC1616B03A006C7C03 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EED283BE1616B040006C7C03 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EED283C01616B045006C7C03 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EED283C21616B051006C7C03 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EED283C41616B5D9006C7C03 /* LocalStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageService.h; sourceTree = "<group>"; };
+		EED283C51616B5D9006C7C03 /* LocalStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECC20C4160A770B00978174 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED283C31616B051006C7C03 /* libsqlite3.dylib in Frameworks */,
+				EED283C11616B045006C7C03 /* libz.dylib in Frameworks */,
+				EED283BF1616B040006C7C03 /* libxml2.dylib in Frameworks */,
+				EED283BD1616B03A006C7C03 /* SystemConfiguration.framework in Frameworks */,
+				EECC20CB160A770B00978174 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECC20BC160A770B00978174 = {
+			isa = PBXGroup;
+			children = (
+				EED283C21616B051006C7C03 /* libsqlite3.dylib */,
+				EED283C01616B045006C7C03 /* libz.dylib */,
+				EED283BE1616B040006C7C03 /* libxml2.dylib */,
+				EED283BC1616B03A006C7C03 /* SystemConfiguration.framework */,
+				EED282C91616AF6E006C7C03 /* SalamaDataCore */,
+				EED282F11616AF6E006C7C03 /* SalamaUtils */,
+				EECC20CC160A770B00978174 /* SalamaDataService */,
+				EECC20C9160A770B00978174 /* Frameworks */,
+				EECC20C8160A770B00978174 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECC20C8160A770B00978174 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECC20C7160A770B00978174 /* libSalamaDataService.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECC20C9160A770B00978174 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EECC20CA160A770B00978174 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EECC20CC160A770B00978174 /* SalamaDataService */ = {
+			isa = PBXGroup;
+			children = (
+				EED282B11616AF3B006C7C03 /* param */,
+				EEB6AC541618831D007BC6A9 /* ExtraIndexManager.h */,
+				EEB6AC551618831D007BC6A9 /* ExtraIndexManager.m */,
+				EED282BB1616AF3B006C7C03 /* WebService.h */,
+				EED282BC1616AF3B006C7C03 /* WebService.m */,
+				EED283C41616B5D9006C7C03 /* LocalStorageService.h */,
+				EED283C51616B5D9006C7C03 /* LocalStorageService.m */,
+				EECDC311161C232F0039DE8A /* ResourceDownloadHandler.h */,
+				EECDC31F161D86870039DE8A /* ResourceDownloadTaskService.h */,
+				EECDC320161D86870039DE8A /* ResourceDownloadTaskService.m */,
+				EECC20D7160A777E00978174 /* SalamaDataService.h */,
+				EECC20D8160A777E00978174 /* SalamaDataService.m */,
+				EECDC317161D7C8A0039DE8A /* SalamaDataServiceConfig.h */,
+				EECDC318161D7C8A0039DE8A /* SalamaDataServiceConfig.m */,
+				EECC20CD160A770B00978174 /* Supporting Files */,
+			);
+			path = SalamaDataService;
+			sourceTree = "<group>";
+		};
+		EECC20CD160A770B00978174 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECC20CE160A770B00978174 /* SalamaDataService-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EED282B11616AF3B006C7C03 /* param */ = {
+			isa = PBXGroup;
+			children = (
+				EED282B21616AF3B006C7C03 /* DataQueryParam.h */,
+				EED282B31616AF3B006C7C03 /* DataQueryParam.m */,
+				EED282B61616AF3B006C7C03 /* LocalStorageParam.h */,
+				EED282B71616AF3B006C7C03 /* LocalStorageParam.m */,
+				EED282B81616AF3B006C7C03 /* WebServiceParam.h */,
+				EED282B91616AF3B006C7C03 /* WebServiceParam.m */,
+				EECDC326161F15DD0039DE8A /* LocalQueryParam.h */,
+				EECDC327161F15DD0039DE8A /* LocalQueryParam.m */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+		EED282C91616AF6E006C7C03 /* SalamaDataCore */ = {
+			isa = PBXGroup;
+			children = (
+				EED282CA1616AF6E006C7C03 /* SalamaDataCore */,
+			);
+			name = SalamaDataCore;
+			path = ../SalamaDataCore;
+			sourceTree = "<group>";
+		};
+		EED282CA1616AF6E006C7C03 /* SalamaDataCore */ = {
+			isa = PBXGroup;
+			children = (
+				EE910B59173E025F00D71024 /* SSLog.h */,
+				EE910B5A173E025F00D71024 /* SSLog.m */,
+				EED282CB1616AF6E006C7C03 /* data */,
+				EED282D11616AF6E006C7C03 /* DBManager.h */,
+				EED282D21616AF6E006C7C03 /* DBManager.m */,
+				EED282D31616AF6E006C7C03 /* metoxml */,
+				EED282DC1616AF6E006C7C03 /* SalamaDataCore.h */,
+				EED282DD1616AF6E006C7C03 /* sqlite */,
+				EED282E21616AF6E006C7C03 /* util */,
+			);
+			path = SalamaDataCore;
+			sourceTree = "<group>";
+		};
+		EED282CB1616AF6E006C7C03 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EED282CC1616AF6E006C7C03 /* DataTableSetting.h */,
+				EED282CD1616AF6E006C7C03 /* DataTableSetting.m */,
+				EED282CE1616AF6E006C7C03 /* DBDataSqlConsts.h */,
+				EED282CF1616AF6E006C7C03 /* DBDataUtil.h */,
+				EED282D01616AF6E006C7C03 /* DBDataUtil.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EED282D31616AF6E006C7C03 /* metoxml */ = {
+			isa = PBXGroup;
+			children = (
+				EED282D41616AF6E006C7C03 /* cast */,
+				EED282D91616AF6E006C7C03 /* SimpleMetoXML.h */,
+				EED282DA1616AF6E006C7C03 /* SimpleMetoXML.m */,
+			);
+			path = metoxml;
+			sourceTree = "<group>";
+		};
+		EED282D41616AF6E006C7C03 /* cast */ = {
+			isa = PBXGroup;
+			children = (
+				EED282D51616AF6E006C7C03 /* BaseTypeConverter.h */,
+				EED282D61616AF6E006C7C03 /* BaseTypeConverter.m */,
+				EED282D71616AF6E006C7C03 /* BaseTypesMapping.h */,
+				EED282D81616AF6E006C7C03 /* BaseTypesMapping.m */,
+			);
+			path = cast;
+			sourceTree = "<group>";
+		};
+		EED282DD1616AF6E006C7C03 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				EED282DE1616AF6E006C7C03 /* SqliteException.h */,
+				EED282DF1616AF6E006C7C03 /* SqliteException.m */,
+				EED282E01616AF6E006C7C03 /* SqliteUtil.h */,
+				EED282E11616AF6E006C7C03 /* SqliteUtil.m */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		EED282E21616AF6E006C7C03 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				EED282E31616AF6E006C7C03 /* GTM */,
+				EED282E81616AF6E006C7C03 /* PropertyInfo.h */,
+				EED282E91616AF6E006C7C03 /* PropertyInfo.m */,
+				EED282EA1616AF6E006C7C03 /* PropertyInfoUtil.h */,
+				EED282EB1616AF6E006C7C03 /* PropertyInfoUtil.m */,
+				EED282EC1616AF6E006C7C03 /* XmlContentEncoder.h */,
+				EED282ED1616AF6E006C7C03 /* XmlContentEncoder.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		EED282E31616AF6E006C7C03 /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				EED282E41616AF6E006C7C03 /* Foundation */,
+				EED282E71616AF6E006C7C03 /* GTMDefines.h */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+		EED282E41616AF6E006C7C03 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				EED282E51616AF6E006C7C03 /* GTMBase64.h */,
+				EED282E61616AF6E006C7C03 /* GTMBase64.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		EED282F11616AF6E006C7C03 /* SalamaUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EED282F21616AF6E006C7C03 /* SalamaUtils */,
+			);
+			name = SalamaUtils;
+			path = ../SalamaUtils;
+			sourceTree = "<group>";
+		};
+		EED282F21616AF6E006C7C03 /* SalamaUtils */ = {
+			isa = PBXGroup;
+			children = (
+				EED282F51616AF6E006C7C03 /* httpclient */,
+				EED283141616AF6E006C7C03 /* IpAddress */,
+				EED283191616AF6E006C7C03 /* Reachability */,
+				EED283261616AF6E006C7C03 /* zip */,
+				EED282F31616AF6E006C7C03 /* HostReachabilityUtil.h */,
+				EED282F41616AF6E006C7C03 /* HostReachabilityUtil.m */,
+				EED2831C1616AF6E006C7C03 /* ResourceFileManager.h */,
+				EED2831D1616AF6E006C7C03 /* ResourceFileManager.m */,
+				EED2831F1616AF6E006C7C03 /* SalamaUtils.h */,
+				EED283201616AF6E006C7C03 /* TimeUtil.h */,
+				EED283211616AF6E006C7C03 /* TimeUtil.m */,
+				EED283221616AF6E006C7C03 /* URLStringEncoder.h */,
+				EED283231616AF6E006C7C03 /* URLStringEncoder.m */,
+				EED283241616AF6E006C7C03 /* WebServiceUtil.h */,
+				EED283251616AF6E006C7C03 /* WebServiceUtil.m */,
+			);
+			path = SalamaUtils;
+			sourceTree = "<group>";
+		};
+		EED282F51616AF6E006C7C03 /* httpclient */ = {
+			isa = PBXGroup;
+			children = (
+				EED282F61616AF6E006C7C03 /* Methods */,
+				EED283041616AF6E006C7C03 /* Parts */,
+				EED2830A1616AF6E006C7C03 /* Utilities */,
+			);
+			path = httpclient;
+			sourceTree = "<group>";
+		};
+		EED282F61616AF6E006C7C03 /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				EED282F71616AF6E006C7C03 /* BasicMethod.h */,
+				EED282F81616AF6E006C7C03 /* BasicMethod.m */,
+				EED282F91616AF6E006C7C03 /* DeleteMethod.h */,
+				EED282FA1616AF6E006C7C03 /* DeleteMethod.m */,
+				EED282FB1616AF6E006C7C03 /* GetMethod.h */,
+				EED282FC1616AF6E006C7C03 /* GetMethod.m */,
+				EED282FD1616AF6E006C7C03 /* HttpMethod.h */,
+				EED282FE1616AF6E006C7C03 /* MultipartMethod.h */,
+				EED282FF1616AF6E006C7C03 /* MultipartMethod.m */,
+				EED283001616AF6E006C7C03 /* PostMethod.h */,
+				EED283011616AF6E006C7C03 /* PostMethod.m */,
+				EED283021616AF6E006C7C03 /* PutMethod.h */,
+				EED283031616AF6E006C7C03 /* PutMethod.m */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		EED283041616AF6E006C7C03 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				EED283051616AF6E006C7C03 /* FilePart.h */,
+				EED283061616AF6E006C7C03 /* FilePart.m */,
+				EED283071616AF6E006C7C03 /* Part.h */,
+				EED283081616AF6E006C7C03 /* StringPart.h */,
+				EED283091616AF6E006C7C03 /* StringPart.m */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		EED2830A1616AF6E006C7C03 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EED2830B1616AF6E006C7C03 /* Constants.h */,
+				EED2830C1616AF6E006C7C03 /* DelegateMessenger.h */,
+				EED2830D1616AF6E006C7C03 /* DelegateMessenger.m */,
+				EED2830E1616AF6E006C7C03 /* HttpClient.h */,
+				EED2830F1616AF6E006C7C03 /* HttpClientDelegate.h */,
+				EED283101616AF6E006C7C03 /* HttpClientGzipUtility.h */,
+				EED283111616AF6E006C7C03 /* HttpClientGzipUtility.m */,
+				EED283121616AF6E006C7C03 /* HttpResponse.h */,
+				EED283131616AF6E006C7C03 /* HttpResponse.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EED283141616AF6E006C7C03 /* IpAddress */ = {
+			isa = PBXGroup;
+			children = (
+				EED283151616AF6E006C7C03 /* IpAddress.c */,
+				EED283161616AF6E006C7C03 /* IpAddress.h */,
+				EED283171616AF6E006C7C03 /* IpAddressHelper.h */,
+				EED283181616AF6E006C7C03 /* IpAddressHelper.m */,
+			);
+			path = IpAddress;
+			sourceTree = "<group>";
+		};
+		EED283191616AF6E006C7C03 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EED2831A1616AF6E006C7C03 /* Reachability.h */,
+				EED2831B1616AF6E006C7C03 /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		EED283261616AF6E006C7C03 /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				EED283271616AF6E006C7C03 /* minizip */,
+				EED283311616AF6E006C7C03 /* ZipArchive.h */,
+				EED283321616AF6E006C7C03 /* ZipArchive.mm */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
+		EED283271616AF6E006C7C03 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				EED283281616AF6E006C7C03 /* crypt.h */,
+				EED283291616AF6E006C7C03 /* ioapi.c */,
+				EED2832A1616AF6E006C7C03 /* ioapi.h */,
+				EED2832B1616AF6E006C7C03 /* mztools.c */,
+				EED2832C1616AF6E006C7C03 /* mztools.h */,
+				EED2832D1616AF6E006C7C03 /* unzip.c */,
+				EED2832E1616AF6E006C7C03 /* unzip.h */,
+				EED2832F1616AF6E006C7C03 /* zip.c */,
+				EED283301616AF6E006C7C03 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EECC20C5160A770B00978174 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECC20D9160A777E00978174 /* SalamaDataService.h in Headers */,
+				EED282BD1616AF3B006C7C03 /* DataQueryParam.h in Headers */,
+				EED282C11616AF3B006C7C03 /* LocalStorageParam.h in Headers */,
+				EED282C31616AF3B006C7C03 /* WebServiceParam.h in Headers */,
+				EED282C61616AF3B006C7C03 /* WebService.h in Headers */,
+				EED283521616AF6F006C7C03 /* DataTableSetting.h in Headers */,
+				EED283541616AF6F006C7C03 /* DBDataSqlConsts.h in Headers */,
+				EED283551616AF6F006C7C03 /* DBDataUtil.h in Headers */,
+				EED283571616AF6F006C7C03 /* DBManager.h in Headers */,
+				EED283591616AF6F006C7C03 /* BaseTypeConverter.h in Headers */,
+				EED2835B1616AF6F006C7C03 /* BaseTypesMapping.h in Headers */,
+				EED2835D1616AF6F006C7C03 /* SimpleMetoXML.h in Headers */,
+				EED283601616AF6F006C7C03 /* SalamaDataCore.h in Headers */,
+				EED283611616AF6F006C7C03 /* SqliteException.h in Headers */,
+				EED283631616AF6F006C7C03 /* SqliteUtil.h in Headers */,
+				EED283651616AF6F006C7C03 /* GTMBase64.h in Headers */,
+				EED283671616AF6F006C7C03 /* GTMDefines.h in Headers */,
+				EED283681616AF6F006C7C03 /* PropertyInfo.h in Headers */,
+				EED2836A1616AF6F006C7C03 /* PropertyInfoUtil.h in Headers */,
+				EED2836C1616AF6F006C7C03 /* XmlContentEncoder.h in Headers */,
+				EED2836E1616AF6F006C7C03 /* HostReachabilityUtil.h in Headers */,
+				EED283701616AF6F006C7C03 /* BasicMethod.h in Headers */,
+				EED283721616AF6F006C7C03 /* DeleteMethod.h in Headers */,
+				EED283741616AF6F006C7C03 /* GetMethod.h in Headers */,
+				EED283761616AF6F006C7C03 /* HttpMethod.h in Headers */,
+				EED283771616AF6F006C7C03 /* MultipartMethod.h in Headers */,
+				EED283791616AF6F006C7C03 /* PostMethod.h in Headers */,
+				EED2837B1616AF6F006C7C03 /* PutMethod.h in Headers */,
+				EED2837D1616AF6F006C7C03 /* FilePart.h in Headers */,
+				EED2837F1616AF6F006C7C03 /* Part.h in Headers */,
+				EED283801616AF6F006C7C03 /* StringPart.h in Headers */,
+				EED283821616AF6F006C7C03 /* Constants.h in Headers */,
+				EED283831616AF6F006C7C03 /* DelegateMessenger.h in Headers */,
+				EED283851616AF6F006C7C03 /* HttpClient.h in Headers */,
+				EED283861616AF6F006C7C03 /* HttpClientDelegate.h in Headers */,
+				EED283871616AF6F006C7C03 /* HttpClientGzipUtility.h in Headers */,
+				EED283891616AF6F006C7C03 /* HttpResponse.h in Headers */,
+				EED2838C1616AF6F006C7C03 /* IpAddress.h in Headers */,
+				EED2838D1616AF6F006C7C03 /* IpAddressHelper.h in Headers */,
+				EED2838F1616AF6F006C7C03 /* Reachability.h in Headers */,
+				EED283911616AF6F006C7C03 /* ResourceFileManager.h in Headers */,
+				EED283941616AF6F006C7C03 /* SalamaUtils.h in Headers */,
+				EED283951616AF6F006C7C03 /* TimeUtil.h in Headers */,
+				EED283971616AF6F006C7C03 /* URLStringEncoder.h in Headers */,
+				EED283991616AF6F006C7C03 /* WebServiceUtil.h in Headers */,
+				EED2839B1616AF6F006C7C03 /* crypt.h in Headers */,
+				EED2839D1616AF6F006C7C03 /* ioapi.h in Headers */,
+				EED2839F1616AF6F006C7C03 /* mztools.h in Headers */,
+				EED283A11616AF6F006C7C03 /* unzip.h in Headers */,
+				EED283A31616AF6F006C7C03 /* zip.h in Headers */,
+				EED283A41616AF6F006C7C03 /* ZipArchive.h in Headers */,
+				EED283C61616B5D9006C7C03 /* LocalStorageService.h in Headers */,
+				EEB6AC561618831D007BC6A9 /* ExtraIndexManager.h in Headers */,
+				EECDC319161D7C8A0039DE8A /* SalamaDataServiceConfig.h in Headers */,
+				EECDC321161D86880039DE8A /* ResourceDownloadTaskService.h in Headers */,
+				EECDC328161F15DD0039DE8A /* LocalQueryParam.h in Headers */,
+				EE910B5B173E025F00D71024 /* SSLog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EECC20C6160A770B00978174 /* SalamaDataService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECC20D4160A770B00978174 /* Build configuration list for PBXNativeTarget "SalamaDataService" */;
+			buildPhases = (
+				EECC20C3160A770B00978174 /* Sources */,
+				EECC20C4160A770B00978174 /* Frameworks */,
+				EECC20C5160A770B00978174 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalamaDataService;
+			productName = SalamaDataService;
+			productReference = EECC20C7160A770B00978174 /* libSalamaDataService.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECC20BE160A770B00978174 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = EECC20C1160A770B00978174 /* Build configuration list for PBXProject "SalamaDataService" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EECC20BC160A770B00978174;
+			productRefGroup = EECC20C8160A770B00978174 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECC20C6160A770B00978174 /* SalamaDataService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECC20C3160A770B00978174 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECC20DA160A777E00978174 /* SalamaDataService.m in Sources */,
+				EED282BE1616AF3B006C7C03 /* DataQueryParam.m in Sources */,
+				EED282C21616AF3B006C7C03 /* LocalStorageParam.m in Sources */,
+				EED282C41616AF3B006C7C03 /* WebServiceParam.m in Sources */,
+				EED282C71616AF3B006C7C03 /* WebService.m in Sources */,
+				EED283531616AF6F006C7C03 /* DataTableSetting.m in Sources */,
+				EED283561616AF6F006C7C03 /* DBDataUtil.m in Sources */,
+				EED283581616AF6F006C7C03 /* DBManager.m in Sources */,
+				EED2835A1616AF6F006C7C03 /* BaseTypeConverter.m in Sources */,
+				EED2835C1616AF6F006C7C03 /* BaseTypesMapping.m in Sources */,
+				EED2835E1616AF6F006C7C03 /* SimpleMetoXML.m in Sources */,
+				EED283621616AF6F006C7C03 /* SqliteException.m in Sources */,
+				EED283641616AF6F006C7C03 /* SqliteUtil.m in Sources */,
+				EED283661616AF6F006C7C03 /* GTMBase64.m in Sources */,
+				EED283691616AF6F006C7C03 /* PropertyInfo.m in Sources */,
+				EED2836B1616AF6F006C7C03 /* PropertyInfoUtil.m in Sources */,
+				EED2836D1616AF6F006C7C03 /* XmlContentEncoder.m in Sources */,
+				EED2836F1616AF6F006C7C03 /* HostReachabilityUtil.m in Sources */,
+				EED283711616AF6F006C7C03 /* BasicMethod.m in Sources */,
+				EED283731616AF6F006C7C03 /* DeleteMethod.m in Sources */,
+				EED283751616AF6F006C7C03 /* GetMethod.m in Sources */,
+				EED283781616AF6F006C7C03 /* MultipartMethod.m in Sources */,
+				EED2837A1616AF6F006C7C03 /* PostMethod.m in Sources */,
+				EED2837C1616AF6F006C7C03 /* PutMethod.m in Sources */,
+				EED2837E1616AF6F006C7C03 /* FilePart.m in Sources */,
+				EED283811616AF6F006C7C03 /* StringPart.m in Sources */,
+				EED283841616AF6F006C7C03 /* DelegateMessenger.m in Sources */,
+				EED283881616AF6F006C7C03 /* HttpClientGzipUtility.m in Sources */,
+				EED2838A1616AF6F006C7C03 /* HttpResponse.m in Sources */,
+				EED2838B1616AF6F006C7C03 /* IpAddress.c in Sources */,
+				EED2838E1616AF6F006C7C03 /* IpAddressHelper.m in Sources */,
+				EED283901616AF6F006C7C03 /* Reachability.m in Sources */,
+				EED283921616AF6F006C7C03 /* ResourceFileManager.m in Sources */,
+				EED283961616AF6F006C7C03 /* TimeUtil.m in Sources */,
+				EED283981616AF6F006C7C03 /* URLStringEncoder.m in Sources */,
+				EED2839A1616AF6F006C7C03 /* WebServiceUtil.m in Sources */,
+				EED2839C1616AF6F006C7C03 /* ioapi.c in Sources */,
+				EED2839E1616AF6F006C7C03 /* mztools.c in Sources */,
+				EED283A01616AF6F006C7C03 /* unzip.c in Sources */,
+				EED283A21616AF6F006C7C03 /* zip.c in Sources */,
+				EED283A51616AF6F006C7C03 /* ZipArchive.mm in Sources */,
+				EED283C71616B5D9006C7C03 /* LocalStorageService.m in Sources */,
+				EEB6AC571618831D007BC6A9 /* ExtraIndexManager.m in Sources */,
+				EECDC31A161D7C8A0039DE8A /* SalamaDataServiceConfig.m in Sources */,
+				EECDC322161D86880039DE8A /* ResourceDownloadTaskService.m in Sources */,
+				EECDC329161F15DD0039DE8A /* LocalQueryParam.m in Sources */,
+				EE910B5C173E025F00D71024 /* SSLog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EECC20D2160A770B00978174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EECC20D3160A770B00978174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EECC20D5160A770B00978174 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SalamaDataService.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalamaDataService/SalamaDataService-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s armv6 armv6s";
+			};
+			name = Debug;
+		};
+		EECC20D6160A770B00978174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SalamaDataService.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalamaDataService/SalamaDataService-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VALID_ARCHS = "armv7 armv7s armv6 armv6s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECC20C1160A770B00978174 /* Build configuration list for PBXProject "SalamaDataService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECC20D2160A770B00978174 /* Debug */,
+				EECC20D3160A770B00978174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECC20D4160A770B00978174 /* Build configuration list for PBXNativeTarget "SalamaDataService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECC20D5160A770B00978174 /* Debug */,
+				EECC20D6160A770B00978174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EECC20BE160A770B00978174 /* Project object */;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C3F01C3C-2B63-42E4-9BF3-C7B3AB58244C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SalamaUtils</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>32211BF1-A5DF-45D3-8F2C-DD6182F4ACA5</key>
+		<string>https://192.168.1.35/svn/salamaios</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>trunk/src0.3/native/SalamaUtils/SalamaUtils.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>32211BF1-A5DF-45D3-8F2C-DD6182F4ACA5</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>32211BF1-A5DF-45D3-8F2C-DD6182F4ACA5</key>
+		<string>https://192.168.1.35/svn/salamaios</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.35/svn/salamaios/trunk/src0.3/native/SalamaUtils/SalamaUtils.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>32211BF1-A5DF-45D3-8F2C-DD6182F4ACA5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32211BF1-A5DF-45D3-8F2C-DD6182F4ACA5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SalamaIOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

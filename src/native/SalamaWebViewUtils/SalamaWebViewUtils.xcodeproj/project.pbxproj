@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A169E597183E1D8200C1BBE1 /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A169E595183E1D8200C1BBE1 /* SSLog.h */; };
+		A169E598183E1D8200C1BBE1 /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A169E596183E1D8200C1BBE1 /* SSLog.m */; };
+		A169E59A183E1DE200C1BBE1 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A169E599183E1DE200C1BBE1 /* ZipArchive.m */; };
+		A1F156CE17BB8C5F00860A22 /* TableDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F156CC17BB8C5F00860A22 /* TableDesc.h */; };
+		A1F156CF17BB8C5F00860A22 /* TableDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F156CD17BB8C5F00860A22 /* TableDesc.m */; };
+		A1F156D217BB8E8B00860A22 /* BaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */; };
+		A1F156D317BB8E8B00860A22 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F156D117BB8E8B00860A22 /* BaseWebViewController.m */; };
+		EE22D08F15FF39A10037CFAE /* IpAddress.c in Sources */ = {isa = PBXBuildFile; fileRef = EE22D08515FF39A10037CFAE /* IpAddress.c */; };
+		EE22D09015FF39A10037CFAE /* IpAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = EE22D08615FF39A10037CFAE /* IpAddress.h */; };
+		EE22D09115FF39A10037CFAE /* IpAddressHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = EE22D08715FF39A10037CFAE /* IpAddressHelper.h */; };
+		EE22D09215FF39A10037CFAE /* IpAddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22D08815FF39A10037CFAE /* IpAddressHelper.m */; };
+		EE22D09315FF39A10037CFAE /* ResourceFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE22D08915FF39A10037CFAE /* ResourceFileManager.h */; };
+		EE22D09415FF39A10037CFAE /* ResourceFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22D08A15FF39A10037CFAE /* ResourceFileManager.m */; };
+		EE22D09715FF39A10037CFAE /* TimeUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EE22D08D15FF39A10037CFAE /* TimeUtil.h */; };
+		EE22D09815FF39A10037CFAE /* TimeUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE22D08E15FF39A10037CFAE /* TimeUtil.m */; };
+		EE40421D15F4C3A500649F65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE40421C15F4C3A500649F65 /* Foundation.framework */; };
+		EE40422C15F4C3E100649F65 /* CommonWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40422915F4C3E100649F65 /* CommonWebViewController.h */; };
+		EE40422D15F4C3E100649F65 /* CommonWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40422A15F4C3E100649F65 /* CommonWebViewController.m */; };
+		EE4042A815F4DDE900649F65 /* SalamaWebCore.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40428E15F4DDE900649F65 /* SalamaWebCore.h */; };
+		EE4042A915F4DDE900649F65 /* InvokeMsg.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40429015F4DDE900649F65 /* InvokeMsg.h */; };
+		EE4042AA15F4DDE900649F65 /* InvokeMsg.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40429115F4DDE900649F65 /* InvokeMsg.m */; };
+		EE4042AB15F4DDE900649F65 /* LocalWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40429215F4DDE900649F65 /* LocalWebViewController.h */; };
+		EE4042AC15F4DDE900649F65 /* LocalWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40429315F4DDE900649F65 /* LocalWebViewController.m */; };
+		EE4042AD15F4DDE900649F65 /* NativeService.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40429415F4DDE900649F65 /* NativeService.h */; };
+		EE4042AE15F4DDE900649F65 /* NativeService.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40429515F4DDE900649F65 /* NativeService.m */; };
+		EE4042AF15F4DDE900649F65 /* WebController.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40429615F4DDE900649F65 /* WebController.h */; };
+		EE4042B015F4DDE900649F65 /* WebController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40429715F4DDE900649F65 /* WebController.m */; };
+		EE4042B115F4DDE900649F65 /* WebManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE40429815F4DDE900649F65 /* WebManager.h */; };
+		EE4042B215F4DDE900649F65 /* WebManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE40429915F4DDE900649F65 /* WebManager.m */; };
+		EE4042E215F4DDFE00649F65 /* DataTableSetting.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042C015F4DDFE00649F65 /* DataTableSetting.h */; };
+		EE4042E315F4DDFE00649F65 /* DataTableSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042C115F4DDFE00649F65 /* DataTableSetting.m */; };
+		EE4042E415F4DDFE00649F65 /* DBDataSqlConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042C215F4DDFE00649F65 /* DBDataSqlConsts.h */; };
+		EE4042E515F4DDFE00649F65 /* DBDataUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042C315F4DDFE00649F65 /* DBDataUtil.h */; };
+		EE4042E615F4DDFE00649F65 /* DBDataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042C415F4DDFE00649F65 /* DBDataUtil.m */; };
+		EE4042E715F4DDFE00649F65 /* DBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042C515F4DDFE00649F65 /* DBManager.h */; };
+		EE4042E815F4DDFE00649F65 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042C615F4DDFE00649F65 /* DBManager.m */; };
+		EE4042E915F4DDFE00649F65 /* BaseTypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042C915F4DDFE00649F65 /* BaseTypeConverter.h */; };
+		EE4042EA15F4DDFE00649F65 /* BaseTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042CA15F4DDFE00649F65 /* BaseTypeConverter.m */; };
+		EE4042EB15F4DDFE00649F65 /* BaseTypesMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042CB15F4DDFE00649F65 /* BaseTypesMapping.h */; };
+		EE4042EC15F4DDFE00649F65 /* BaseTypesMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042CC15F4DDFE00649F65 /* BaseTypesMapping.m */; };
+		EE4042ED15F4DDFE00649F65 /* SimpleMetoXML.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042CD15F4DDFE00649F65 /* SimpleMetoXML.h */; };
+		EE4042EE15F4DDFE00649F65 /* SimpleMetoXML.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042CE15F4DDFE00649F65 /* SimpleMetoXML.m */; };
+		EE4042F015F4DDFE00649F65 /* SalamaDataCore.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042D015F4DDFE00649F65 /* SalamaDataCore.h */; };
+		EE4042F115F4DDFE00649F65 /* SqliteException.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042D215F4DDFE00649F65 /* SqliteException.h */; };
+		EE4042F215F4DDFE00649F65 /* SqliteException.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042D315F4DDFE00649F65 /* SqliteException.m */; };
+		EE4042F315F4DDFE00649F65 /* SqliteUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042D415F4DDFE00649F65 /* SqliteUtil.h */; };
+		EE4042F415F4DDFE00649F65 /* SqliteUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042D515F4DDFE00649F65 /* SqliteUtil.m */; };
+		EE4042F515F4DDFE00649F65 /* GTMBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042D915F4DDFE00649F65 /* GTMBase64.h */; };
+		EE4042F615F4DDFE00649F65 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042DA15F4DDFE00649F65 /* GTMBase64.m */; };
+		EE4042F715F4DDFE00649F65 /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042DB15F4DDFE00649F65 /* GTMDefines.h */; };
+		EE4042F815F4DDFE00649F65 /* PropertyInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042DC15F4DDFE00649F65 /* PropertyInfo.h */; };
+		EE4042F915F4DDFE00649F65 /* PropertyInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042DD15F4DDFE00649F65 /* PropertyInfo.m */; };
+		EE4042FA15F4DDFE00649F65 /* PropertyInfoUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042DE15F4DDFE00649F65 /* PropertyInfoUtil.h */; };
+		EE4042FB15F4DDFE00649F65 /* PropertyInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042DF15F4DDFE00649F65 /* PropertyInfoUtil.m */; };
+		EE4042FC15F4DDFE00649F65 /* XmlContentEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EE4042E015F4DDFE00649F65 /* XmlContentEncoder.h */; };
+		EE4042FD15F4DDFE00649F65 /* XmlContentEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EE4042E115F4DDFE00649F65 /* XmlContentEncoder.m */; };
+		EE4042FF15F4DE2900649F65 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4042FE15F4DE2900649F65 /* SystemConfiguration.framework */; };
+		EE5FDF3B1689C3CE00C3EF9A /* SalamaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5FDF3A1689C3CE00C3EF9A /* SalamaUtils.h */; };
+		EECDC32F1620E9AE0039DE8A /* PageLoadingAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC32D1620E9AE0039DE8A /* PageLoadingAnimationView.h */; };
+		EECDC3301620E9AE0039DE8A /* PageLoadingAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC32E1620E9AE0039DE8A /* PageLoadingAnimationView.m */; };
+		EECDC36716210F8A0039DE8A /* HostReachabilityUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33216210F8A0039DE8A /* HostReachabilityUtil.h */; };
+		EECDC36816210F8A0039DE8A /* HostReachabilityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC33316210F8A0039DE8A /* HostReachabilityUtil.m */; };
+		EECDC36916210F8A0039DE8A /* BasicMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33616210F8A0039DE8A /* BasicMethod.h */; };
+		EECDC36A16210F8A0039DE8A /* BasicMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC33716210F8A0039DE8A /* BasicMethod.m */; };
+		EECDC36B16210F8A0039DE8A /* DeleteMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33816210F8A0039DE8A /* DeleteMethod.h */; };
+		EECDC36C16210F8A0039DE8A /* DeleteMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC33916210F8A0039DE8A /* DeleteMethod.m */; };
+		EECDC36D16210F8A0039DE8A /* GetMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33A16210F8A0039DE8A /* GetMethod.h */; };
+		EECDC36E16210F8A0039DE8A /* GetMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC33B16210F8A0039DE8A /* GetMethod.m */; };
+		EECDC36F16210F8A0039DE8A /* HttpMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33C16210F8A0039DE8A /* HttpMethod.h */; };
+		EECDC37016210F8A0039DE8A /* MultipartMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33D16210F8A0039DE8A /* MultipartMethod.h */; };
+		EECDC37116210F8A0039DE8A /* MultipartMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC33E16210F8A0039DE8A /* MultipartMethod.m */; };
+		EECDC37216210F8A0039DE8A /* PostMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC33F16210F8A0039DE8A /* PostMethod.h */; };
+		EECDC37316210F8A0039DE8A /* PostMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC34016210F8A0039DE8A /* PostMethod.m */; };
+		EECDC37416210F8A0039DE8A /* PutMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34116210F8A0039DE8A /* PutMethod.h */; };
+		EECDC37516210F8A0039DE8A /* PutMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC34216210F8A0039DE8A /* PutMethod.m */; };
+		EECDC37616210F8A0039DE8A /* FilePart.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34416210F8A0039DE8A /* FilePart.h */; };
+		EECDC37716210F8A0039DE8A /* FilePart.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC34516210F8A0039DE8A /* FilePart.m */; };
+		EECDC37816210F8A0039DE8A /* Part.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34616210F8A0039DE8A /* Part.h */; };
+		EECDC37916210F8A0039DE8A /* StringPart.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34716210F8A0039DE8A /* StringPart.h */; };
+		EECDC37A16210F8A0039DE8A /* StringPart.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC34816210F8A0039DE8A /* StringPart.m */; };
+		EECDC37B16210F8A0039DE8A /* Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34A16210F8A0039DE8A /* Constants.h */; };
+		EECDC37C16210F8A0039DE8A /* DelegateMessenger.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34B16210F8A0039DE8A /* DelegateMessenger.h */; };
+		EECDC37D16210F8A0039DE8A /* DelegateMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC34C16210F8A0039DE8A /* DelegateMessenger.m */; };
+		EECDC37E16210F8A0039DE8A /* HttpClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34D16210F8A0039DE8A /* HttpClient.h */; };
+		EECDC37F16210F8A0039DE8A /* HttpClientDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34E16210F8A0039DE8A /* HttpClientDelegate.h */; };
+		EECDC38016210F8A0039DE8A /* HttpClientGzipUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC34F16210F8A0039DE8A /* HttpClientGzipUtility.h */; };
+		EECDC38116210F8A0039DE8A /* HttpClientGzipUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35016210F8A0039DE8A /* HttpClientGzipUtility.m */; };
+		EECDC38216210F8A0039DE8A /* HttpResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35116210F8A0039DE8A /* HttpResponse.h */; };
+		EECDC38316210F8A0039DE8A /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35216210F8A0039DE8A /* HttpResponse.m */; };
+		EECDC38416210F8A0039DE8A /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35416210F8A0039DE8A /* Reachability.h */; };
+		EECDC38516210F8A0039DE8A /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35516210F8A0039DE8A /* Reachability.m */; };
+		EECDC38616210F8A0039DE8A /* URLStringEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35616210F8A0039DE8A /* URLStringEncoder.h */; };
+		EECDC38716210F8A0039DE8A /* URLStringEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35716210F8A0039DE8A /* URLStringEncoder.m */; };
+		EECDC38816210F8A0039DE8A /* WebServiceUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35816210F8A0039DE8A /* WebServiceUtil.h */; };
+		EECDC38916210F8A0039DE8A /* WebServiceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35916210F8A0039DE8A /* WebServiceUtil.m */; };
+		EECDC38A16210F8A0039DE8A /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35C16210F8A0039DE8A /* crypt.h */; };
+		EECDC38B16210F8A0039DE8A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35D16210F8A0039DE8A /* ioapi.c */; };
+		EECDC38C16210F8A0039DE8A /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC35E16210F8A0039DE8A /* ioapi.h */; };
+		EECDC38D16210F8A0039DE8A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EECDC35F16210F8A0039DE8A /* mztools.c */; };
+		EECDC38E16210F8A0039DE8A /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC36016210F8A0039DE8A /* mztools.h */; };
+		EECDC38F16210F8A0039DE8A /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = EECDC36116210F8A0039DE8A /* unzip.c */; };
+		EECDC39016210F8A0039DE8A /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC36216210F8A0039DE8A /* unzip.h */; };
+		EECDC39116210F8A0039DE8A /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = EECDC36316210F8A0039DE8A /* zip.c */; };
+		EECDC39216210F8A0039DE8A /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC36416210F8A0039DE8A /* zip.h */; };
+		EECDC39316210F8A0039DE8A /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC36516210F8A0039DE8A /* ZipArchive.h */; };
+		EECDC3971621199F0039DE8A /* PageLoadWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDC3951621199F0039DE8A /* PageLoadWebViewController.h */; };
+		EECDC3981621199F0039DE8A /* PageLoadWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EECDC3961621199F0039DE8A /* PageLoadWebViewController.m */; };
+		EEF4536A166494EE0070B446 /* ViewService.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45367166494EE0070B446 /* ViewService.h */; };
+		EEF4536B166494EE0070B446 /* ViewService.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45368166494EE0070B446 /* ViewService.m */; };
+		EEF4536C166494EE0070B446 /* WebVariableStack.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45369166494EE0070B446 /* WebVariableStack.h */; };
+		EEF4538E166495BC0070B446 /* ExtraIndexManager.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF4536F166495BC0070B446 /* ExtraIndexManager.h */; };
+		EEF4538F166495BC0070B446 /* ExtraIndexManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45370166495BC0070B446 /* ExtraIndexManager.m */; };
+		EEF45390166495BC0070B446 /* LocalStorageService.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45371166495BC0070B446 /* LocalStorageService.h */; };
+		EEF45391166495BC0070B446 /* LocalStorageService.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45372166495BC0070B446 /* LocalStorageService.m */; };
+		EEF45392166495BC0070B446 /* DataQueryParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45374166495BC0070B446 /* DataQueryParam.h */; };
+		EEF45393166495BC0070B446 /* DataQueryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45375166495BC0070B446 /* DataQueryParam.m */; };
+		EEF45394166495BC0070B446 /* LocalQueryParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45376166495BC0070B446 /* LocalQueryParam.h */; };
+		EEF45395166495BC0070B446 /* LocalQueryParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45377166495BC0070B446 /* LocalQueryParam.m */; };
+		EEF45396166495BC0070B446 /* LocalStorageParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45378166495BC0070B446 /* LocalStorageParam.h */; };
+		EEF45397166495BC0070B446 /* LocalStorageParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45379166495BC0070B446 /* LocalStorageParam.m */; };
+		EEF45398166495BC0070B446 /* WebServiceParam.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF4537A166495BC0070B446 /* WebServiceParam.h */; };
+		EEF45399166495BC0070B446 /* WebServiceParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF4537B166495BC0070B446 /* WebServiceParam.m */; };
+		EEF4539A166495BC0070B446 /* ResourceDownloadHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF4537C166495BC0070B446 /* ResourceDownloadHandler.h */; };
+		EEF4539B166495BC0070B446 /* ResourceDownloadTaskService.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF4537D166495BC0070B446 /* ResourceDownloadTaskService.h */; };
+		EEF4539C166495BC0070B446 /* ResourceDownloadTaskService.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF4537E166495BC0070B446 /* ResourceDownloadTaskService.m */; };
+		EEF4539E166495BC0070B446 /* SalamaDataService.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45380166495BC0070B446 /* SalamaDataService.h */; };
+		EEF4539F166495BC0070B446 /* SalamaDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45381166495BC0070B446 /* SalamaDataService.m */; };
+		EEF453A0166495BC0070B446 /* SalamaDataServiceConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45382166495BC0070B446 /* SalamaDataServiceConfig.h */; };
+		EEF453A1166495BC0070B446 /* SalamaDataServiceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45383166495BC0070B446 /* SalamaDataServiceConfig.m */; };
+		EEF453A4166495BC0070B446 /* WebService.h in Headers */ = {isa = PBXBuildFile; fileRef = EEF45386166495BC0070B446 /* WebService.h */; };
+		EEF453A5166495BC0070B446 /* WebService.m in Sources */ = {isa = PBXBuildFile; fileRef = EEF45387166495BC0070B446 /* WebService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A169E595183E1D8200C1BBE1 /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
+		A169E596183E1D8200C1BBE1 /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
+		A169E599183E1DE200C1BBE1 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		A1F156CC17BB8C5F00860A22 /* TableDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDesc.h; sourceTree = "<group>"; };
+		A1F156CD17BB8C5F00860A22 /* TableDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDesc.m; sourceTree = "<group>"; };
+		A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		A1F156D117BB8E8B00860A22 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		EE22D08515FF39A10037CFAE /* IpAddress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IpAddress.c; sourceTree = "<group>"; };
+		EE22D08615FF39A10037CFAE /* IpAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpAddress.h; sourceTree = "<group>"; };
+		EE22D08715FF39A10037CFAE /* IpAddressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IpAddressHelper.h; sourceTree = "<group>"; };
+		EE22D08815FF39A10037CFAE /* IpAddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IpAddressHelper.m; sourceTree = "<group>"; };
+		EE22D08915FF39A10037CFAE /* ResourceFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceFileManager.h; sourceTree = "<group>"; };
+		EE22D08A15FF39A10037CFAE /* ResourceFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceFileManager.m; sourceTree = "<group>"; };
+		EE22D08D15FF39A10037CFAE /* TimeUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeUtil.h; sourceTree = "<group>"; };
+		EE22D08E15FF39A10037CFAE /* TimeUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeUtil.m; sourceTree = "<group>"; };
+		EE40421915F4C3A500649F65 /* libSalamaWebViewUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSalamaWebViewUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE40421C15F4C3A500649F65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE40422015F4C3A500649F65 /* SalamaWebViewUtils-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SalamaWebViewUtils-Prefix.pch"; sourceTree = "<group>"; };
+		EE40422115F4C3A500649F65 /* SalamaWebViewUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SalamaWebViewUtils.h; sourceTree = "<group>"; };
+		EE40422915F4C3E100649F65 /* CommonWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonWebViewController.h; sourceTree = "<group>"; };
+		EE40422A15F4C3E100649F65 /* CommonWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonWebViewController.m; sourceTree = "<group>"; };
+		EE40428E15F4DDE900649F65 /* SalamaWebCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaWebCore.h; sourceTree = "<group>"; };
+		EE40429015F4DDE900649F65 /* InvokeMsg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvokeMsg.h; sourceTree = "<group>"; };
+		EE40429115F4DDE900649F65 /* InvokeMsg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvokeMsg.m; sourceTree = "<group>"; };
+		EE40429215F4DDE900649F65 /* LocalWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWebViewController.h; sourceTree = "<group>"; };
+		EE40429315F4DDE900649F65 /* LocalWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalWebViewController.m; sourceTree = "<group>"; };
+		EE40429415F4DDE900649F65 /* NativeService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NativeService.h; sourceTree = "<group>"; };
+		EE40429515F4DDE900649F65 /* NativeService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NativeService.m; sourceTree = "<group>"; };
+		EE40429615F4DDE900649F65 /* WebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebController.h; sourceTree = "<group>"; };
+		EE40429715F4DDE900649F65 /* WebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebController.m; sourceTree = "<group>"; };
+		EE40429815F4DDE900649F65 /* WebManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebManager.h; sourceTree = "<group>"; };
+		EE40429915F4DDE900649F65 /* WebManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebManager.m; sourceTree = "<group>"; };
+		EE4042C015F4DDFE00649F65 /* DataTableSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableSetting.h; sourceTree = "<group>"; };
+		EE4042C115F4DDFE00649F65 /* DataTableSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableSetting.m; sourceTree = "<group>"; };
+		EE4042C215F4DDFE00649F65 /* DBDataSqlConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDataSqlConsts.h; sourceTree = "<group>"; };
+		EE4042C315F4DDFE00649F65 /* DBDataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBDataUtil.h; sourceTree = "<group>"; };
+		EE4042C415F4DDFE00649F65 /* DBDataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBDataUtil.m; sourceTree = "<group>"; };
+		EE4042C515F4DDFE00649F65 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		EE4042C615F4DDFE00649F65 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		EE4042C915F4DDFE00649F65 /* BaseTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypeConverter.h; sourceTree = "<group>"; };
+		EE4042CA15F4DDFE00649F65 /* BaseTypeConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTypeConverter.m; sourceTree = "<group>"; };
+		EE4042CB15F4DDFE00649F65 /* BaseTypesMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTypesMapping.h; sourceTree = "<group>"; };
+		EE4042CC15F4DDFE00649F65 /* BaseTypesMapping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTypesMapping.m; sourceTree = "<group>"; };
+		EE4042CD15F4DDFE00649F65 /* SimpleMetoXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleMetoXML.h; sourceTree = "<group>"; };
+		EE4042CE15F4DDFE00649F65 /* SimpleMetoXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleMetoXML.m; sourceTree = "<group>"; };
+		EE4042D015F4DDFE00649F65 /* SalamaDataCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataCore.h; sourceTree = "<group>"; };
+		EE4042D215F4DDFE00649F65 /* SqliteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteException.h; sourceTree = "<group>"; };
+		EE4042D315F4DDFE00649F65 /* SqliteException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteException.m; sourceTree = "<group>"; };
+		EE4042D415F4DDFE00649F65 /* SqliteUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteUtil.h; sourceTree = "<group>"; };
+		EE4042D515F4DDFE00649F65 /* SqliteUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteUtil.m; sourceTree = "<group>"; };
+		EE4042D915F4DDFE00649F65 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		EE4042DA15F4DDFE00649F65 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		EE4042DB15F4DDFE00649F65 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		EE4042DC15F4DDFE00649F65 /* PropertyInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyInfo.h; sourceTree = "<group>"; };
+		EE4042DD15F4DDFE00649F65 /* PropertyInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfo.m; sourceTree = "<group>"; };
+		EE4042DE15F4DDFE00649F65 /* PropertyInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyInfoUtil.h; sourceTree = "<group>"; };
+		EE4042DF15F4DDFE00649F65 /* PropertyInfoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfoUtil.m; sourceTree = "<group>"; };
+		EE4042E015F4DDFE00649F65 /* XmlContentEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlContentEncoder.h; sourceTree = "<group>"; };
+		EE4042E115F4DDFE00649F65 /* XmlContentEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlContentEncoder.m; sourceTree = "<group>"; };
+		EE4042FE15F4DE2900649F65 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		EE5FDF3A1689C3CE00C3EF9A /* SalamaUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaUtils.h; sourceTree = "<group>"; };
+		EECDC32D1620E9AE0039DE8A /* PageLoadingAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageLoadingAnimationView.h; sourceTree = "<group>"; };
+		EECDC32E1620E9AE0039DE8A /* PageLoadingAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageLoadingAnimationView.m; sourceTree = "<group>"; };
+		EECDC33216210F8A0039DE8A /* HostReachabilityUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostReachabilityUtil.h; sourceTree = "<group>"; };
+		EECDC33316210F8A0039DE8A /* HostReachabilityUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostReachabilityUtil.m; sourceTree = "<group>"; };
+		EECDC33616210F8A0039DE8A /* BasicMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasicMethod.h; sourceTree = "<group>"; };
+		EECDC33716210F8A0039DE8A /* BasicMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BasicMethod.m; sourceTree = "<group>"; };
+		EECDC33816210F8A0039DE8A /* DeleteMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeleteMethod.h; sourceTree = "<group>"; };
+		EECDC33916210F8A0039DE8A /* DeleteMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeleteMethod.m; sourceTree = "<group>"; };
+		EECDC33A16210F8A0039DE8A /* GetMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMethod.h; sourceTree = "<group>"; };
+		EECDC33B16210F8A0039DE8A /* GetMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMethod.m; sourceTree = "<group>"; };
+		EECDC33C16210F8A0039DE8A /* HttpMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpMethod.h; sourceTree = "<group>"; };
+		EECDC33D16210F8A0039DE8A /* MultipartMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultipartMethod.h; sourceTree = "<group>"; };
+		EECDC33E16210F8A0039DE8A /* MultipartMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultipartMethod.m; sourceTree = "<group>"; };
+		EECDC33F16210F8A0039DE8A /* PostMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostMethod.h; sourceTree = "<group>"; };
+		EECDC34016210F8A0039DE8A /* PostMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostMethod.m; sourceTree = "<group>"; };
+		EECDC34116210F8A0039DE8A /* PutMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PutMethod.h; sourceTree = "<group>"; };
+		EECDC34216210F8A0039DE8A /* PutMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PutMethod.m; sourceTree = "<group>"; };
+		EECDC34416210F8A0039DE8A /* FilePart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilePart.h; sourceTree = "<group>"; };
+		EECDC34516210F8A0039DE8A /* FilePart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilePart.m; sourceTree = "<group>"; };
+		EECDC34616210F8A0039DE8A /* Part.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Part.h; sourceTree = "<group>"; };
+		EECDC34716210F8A0039DE8A /* StringPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringPart.h; sourceTree = "<group>"; };
+		EECDC34816210F8A0039DE8A /* StringPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringPart.m; sourceTree = "<group>"; };
+		EECDC34A16210F8A0039DE8A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		EECDC34B16210F8A0039DE8A /* DelegateMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateMessenger.h; sourceTree = "<group>"; };
+		EECDC34C16210F8A0039DE8A /* DelegateMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateMessenger.m; sourceTree = "<group>"; };
+		EECDC34D16210F8A0039DE8A /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		EECDC34E16210F8A0039DE8A /* HttpClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientDelegate.h; sourceTree = "<group>"; };
+		EECDC34F16210F8A0039DE8A /* HttpClientGzipUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClientGzipUtility.h; sourceTree = "<group>"; };
+		EECDC35016210F8A0039DE8A /* HttpClientGzipUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClientGzipUtility.m; sourceTree = "<group>"; };
+		EECDC35116210F8A0039DE8A /* HttpResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		EECDC35216210F8A0039DE8A /* HttpResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
+		EECDC35416210F8A0039DE8A /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		EECDC35516210F8A0039DE8A /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		EECDC35616210F8A0039DE8A /* URLStringEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLStringEncoder.h; sourceTree = "<group>"; };
+		EECDC35716210F8A0039DE8A /* URLStringEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLStringEncoder.m; sourceTree = "<group>"; };
+		EECDC35816210F8A0039DE8A /* WebServiceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceUtil.h; sourceTree = "<group>"; };
+		EECDC35916210F8A0039DE8A /* WebServiceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceUtil.m; sourceTree = "<group>"; };
+		EECDC35C16210F8A0039DE8A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		EECDC35D16210F8A0039DE8A /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		EECDC35E16210F8A0039DE8A /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		EECDC35F16210F8A0039DE8A /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		EECDC36016210F8A0039DE8A /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		EECDC36116210F8A0039DE8A /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		EECDC36216210F8A0039DE8A /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		EECDC36316210F8A0039DE8A /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		EECDC36416210F8A0039DE8A /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		EECDC36516210F8A0039DE8A /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		EECDC3951621199F0039DE8A /* PageLoadWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageLoadWebViewController.h; sourceTree = "<group>"; };
+		EECDC3961621199F0039DE8A /* PageLoadWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageLoadWebViewController.m; sourceTree = "<group>"; };
+		EEF45367166494EE0070B446 /* ViewService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewService.h; sourceTree = "<group>"; };
+		EEF45368166494EE0070B446 /* ViewService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewService.m; sourceTree = "<group>"; };
+		EEF45369166494EE0070B446 /* WebVariableStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebVariableStack.h; sourceTree = "<group>"; };
+		EEF4536F166495BC0070B446 /* ExtraIndexManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExtraIndexManager.h; sourceTree = "<group>"; };
+		EEF45370166495BC0070B446 /* ExtraIndexManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExtraIndexManager.m; sourceTree = "<group>"; };
+		EEF45371166495BC0070B446 /* LocalStorageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageService.h; sourceTree = "<group>"; };
+		EEF45372166495BC0070B446 /* LocalStorageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageService.m; sourceTree = "<group>"; };
+		EEF45374166495BC0070B446 /* DataQueryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataQueryParam.h; sourceTree = "<group>"; };
+		EEF45375166495BC0070B446 /* DataQueryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataQueryParam.m; sourceTree = "<group>"; };
+		EEF45376166495BC0070B446 /* LocalQueryParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalQueryParam.h; sourceTree = "<group>"; };
+		EEF45377166495BC0070B446 /* LocalQueryParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalQueryParam.m; sourceTree = "<group>"; };
+		EEF45378166495BC0070B446 /* LocalStorageParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalStorageParam.h; sourceTree = "<group>"; };
+		EEF45379166495BC0070B446 /* LocalStorageParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalStorageParam.m; sourceTree = "<group>"; };
+		EEF4537A166495BC0070B446 /* WebServiceParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebServiceParam.h; sourceTree = "<group>"; };
+		EEF4537B166495BC0070B446 /* WebServiceParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebServiceParam.m; sourceTree = "<group>"; };
+		EEF4537C166495BC0070B446 /* ResourceDownloadHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceDownloadHandler.h; sourceTree = "<group>"; };
+		EEF4537D166495BC0070B446 /* ResourceDownloadTaskService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceDownloadTaskService.h; sourceTree = "<group>"; };
+		EEF4537E166495BC0070B446 /* ResourceDownloadTaskService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceDownloadTaskService.m; sourceTree = "<group>"; };
+		EEF45380166495BC0070B446 /* SalamaDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataService.h; sourceTree = "<group>"; };
+		EEF45381166495BC0070B446 /* SalamaDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaDataService.m; sourceTree = "<group>"; };
+		EEF45382166495BC0070B446 /* SalamaDataServiceConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaDataServiceConfig.h; sourceTree = "<group>"; };
+		EEF45383166495BC0070B446 /* SalamaDataServiceConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaDataServiceConfig.m; sourceTree = "<group>"; };
+		EEF45386166495BC0070B446 /* WebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebService.h; sourceTree = "<group>"; };
+		EEF45387166495BC0070B446 /* WebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE40421615F4C3A500649F65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE4042FF15F4DE2900649F65 /* SystemConfiguration.framework in Frameworks */,
+				EE40421D15F4C3A500649F65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE22D08315FF39A10037CFAE /* SalamaUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A169E595183E1D8200C1BBE1 /* SSLog.h */,
+				A169E596183E1D8200C1BBE1 /* SSLog.m */,
+				EE5FDF3A1689C3CE00C3EF9A /* SalamaUtils.h */,
+				EECDC33216210F8A0039DE8A /* HostReachabilityUtil.h */,
+				EECDC33316210F8A0039DE8A /* HostReachabilityUtil.m */,
+				EECDC33416210F8A0039DE8A /* httpclient */,
+				EECDC35316210F8A0039DE8A /* Reachability */,
+				EECDC35616210F8A0039DE8A /* URLStringEncoder.h */,
+				EECDC35716210F8A0039DE8A /* URLStringEncoder.m */,
+				EECDC35816210F8A0039DE8A /* WebServiceUtil.h */,
+				EECDC35916210F8A0039DE8A /* WebServiceUtil.m */,
+				EECDC35A16210F8A0039DE8A /* zip */,
+				EE22D08415FF39A10037CFAE /* IpAddress */,
+				EE22D08915FF39A10037CFAE /* ResourceFileManager.h */,
+				EE22D08A15FF39A10037CFAE /* ResourceFileManager.m */,
+				EE22D08D15FF39A10037CFAE /* TimeUtil.h */,
+				EE22D08E15FF39A10037CFAE /* TimeUtil.m */,
+			);
+			name = SalamaUtils;
+			path = ../SalamaUtils/SalamaUtils;
+			sourceTree = "<group>";
+		};
+		EE22D08415FF39A10037CFAE /* IpAddress */ = {
+			isa = PBXGroup;
+			children = (
+				EE22D08515FF39A10037CFAE /* IpAddress.c */,
+				EE22D08615FF39A10037CFAE /* IpAddress.h */,
+				EE22D08715FF39A10037CFAE /* IpAddressHelper.h */,
+				EE22D08815FF39A10037CFAE /* IpAddressHelper.m */,
+			);
+			path = IpAddress;
+			sourceTree = "<group>";
+		};
+		EE40420E15F4C3A500649F65 = {
+			isa = PBXGroup;
+			children = (
+				EEF4536D166495BC0070B446 /* SalamaDataService */,
+				EE4042FE15F4DE2900649F65 /* SystemConfiguration.framework */,
+				EE22D08315FF39A10037CFAE /* SalamaUtils */,
+				EE4042BE15F4DDFE00649F65 /* SalamaDataCore */,
+				EE40428C15F4DDE900649F65 /* SalamaWebCore */,
+				EE40421E15F4C3A500649F65 /* SalamaWebViewUtils */,
+				EE40421B15F4C3A500649F65 /* Frameworks */,
+				EE40421A15F4C3A500649F65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE40421A15F4C3A500649F65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE40421915F4C3A500649F65 /* libSalamaWebViewUtils.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE40421B15F4C3A500649F65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE40421C15F4C3A500649F65 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE40421E15F4C3A500649F65 /* SalamaWebViewUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */,
+				A1F156D117BB8E8B00860A22 /* BaseWebViewController.m */,
+				EE40422115F4C3A500649F65 /* SalamaWebViewUtils.h */,
+				EE40421F15F4C3A500649F65 /* Supporting Files */,
+				EE40422915F4C3E100649F65 /* CommonWebViewController.h */,
+				EE40422A15F4C3E100649F65 /* CommonWebViewController.m */,
+				EECDC32D1620E9AE0039DE8A /* PageLoadingAnimationView.h */,
+				EECDC32E1620E9AE0039DE8A /* PageLoadingAnimationView.m */,
+				EECDC3951621199F0039DE8A /* PageLoadWebViewController.h */,
+				EECDC3961621199F0039DE8A /* PageLoadWebViewController.m */,
+			);
+			path = SalamaWebViewUtils;
+			sourceTree = "<group>";
+		};
+		EE40421F15F4C3A500649F65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE40422015F4C3A500649F65 /* SalamaWebViewUtils-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE40428C15F4DDE900649F65 /* SalamaWebCore */ = {
+			isa = PBXGroup;
+			children = (
+				EE40428E15F4DDE900649F65 /* SalamaWebCore.h */,
+				EE40428F15F4DDE900649F65 /* web */,
+			);
+			name = SalamaWebCore;
+			path = ../SalamaWebCore/SalamaWebCore;
+			sourceTree = "<group>";
+		};
+		EE40428F15F4DDE900649F65 /* web */ = {
+			isa = PBXGroup;
+			children = (
+				EEF45367166494EE0070B446 /* ViewService.h */,
+				EEF45368166494EE0070B446 /* ViewService.m */,
+				EEF45369166494EE0070B446 /* WebVariableStack.h */,
+				EE40429015F4DDE900649F65 /* InvokeMsg.h */,
+				EE40429115F4DDE900649F65 /* InvokeMsg.m */,
+				EE40429215F4DDE900649F65 /* LocalWebViewController.h */,
+				EE40429315F4DDE900649F65 /* LocalWebViewController.m */,
+				EE40429415F4DDE900649F65 /* NativeService.h */,
+				EE40429515F4DDE900649F65 /* NativeService.m */,
+				EE40429615F4DDE900649F65 /* WebController.h */,
+				EE40429715F4DDE900649F65 /* WebController.m */,
+				EE40429815F4DDE900649F65 /* WebManager.h */,
+				EE40429915F4DDE900649F65 /* WebManager.m */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		EE4042BE15F4DDFE00649F65 /* SalamaDataCore */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042BF15F4DDFE00649F65 /* data */,
+				EE4042C515F4DDFE00649F65 /* DBManager.h */,
+				EE4042C615F4DDFE00649F65 /* DBManager.m */,
+				EE4042C715F4DDFE00649F65 /* metoxml */,
+				EE4042D015F4DDFE00649F65 /* SalamaDataCore.h */,
+				EE4042D115F4DDFE00649F65 /* sqlite */,
+				EE4042D615F4DDFE00649F65 /* util */,
+			);
+			name = SalamaDataCore;
+			path = ../SalamaDataCore/SalamaDataCore;
+			sourceTree = "<group>";
+		};
+		EE4042BF15F4DDFE00649F65 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A1F156CC17BB8C5F00860A22 /* TableDesc.h */,
+				A1F156CD17BB8C5F00860A22 /* TableDesc.m */,
+				EE4042C015F4DDFE00649F65 /* DataTableSetting.h */,
+				EE4042C115F4DDFE00649F65 /* DataTableSetting.m */,
+				EE4042C215F4DDFE00649F65 /* DBDataSqlConsts.h */,
+				EE4042C315F4DDFE00649F65 /* DBDataUtil.h */,
+				EE4042C415F4DDFE00649F65 /* DBDataUtil.m */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EE4042C715F4DDFE00649F65 /* metoxml */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042C815F4DDFE00649F65 /* cast */,
+				EE4042CD15F4DDFE00649F65 /* SimpleMetoXML.h */,
+				EE4042CE15F4DDFE00649F65 /* SimpleMetoXML.m */,
+			);
+			path = metoxml;
+			sourceTree = "<group>";
+		};
+		EE4042C815F4DDFE00649F65 /* cast */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042C915F4DDFE00649F65 /* BaseTypeConverter.h */,
+				EE4042CA15F4DDFE00649F65 /* BaseTypeConverter.m */,
+				EE4042CB15F4DDFE00649F65 /* BaseTypesMapping.h */,
+				EE4042CC15F4DDFE00649F65 /* BaseTypesMapping.m */,
+			);
+			path = cast;
+			sourceTree = "<group>";
+		};
+		EE4042D115F4DDFE00649F65 /* sqlite */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042D215F4DDFE00649F65 /* SqliteException.h */,
+				EE4042D315F4DDFE00649F65 /* SqliteException.m */,
+				EE4042D415F4DDFE00649F65 /* SqliteUtil.h */,
+				EE4042D515F4DDFE00649F65 /* SqliteUtil.m */,
+			);
+			path = sqlite;
+			sourceTree = "<group>";
+		};
+		EE4042D615F4DDFE00649F65 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042D715F4DDFE00649F65 /* GTM */,
+				EE4042DC15F4DDFE00649F65 /* PropertyInfo.h */,
+				EE4042DD15F4DDFE00649F65 /* PropertyInfo.m */,
+				EE4042DE15F4DDFE00649F65 /* PropertyInfoUtil.h */,
+				EE4042DF15F4DDFE00649F65 /* PropertyInfoUtil.m */,
+				EE4042E015F4DDFE00649F65 /* XmlContentEncoder.h */,
+				EE4042E115F4DDFE00649F65 /* XmlContentEncoder.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		EE4042D715F4DDFE00649F65 /* GTM */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042D815F4DDFE00649F65 /* Foundation */,
+				EE4042DB15F4DDFE00649F65 /* GTMDefines.h */,
+			);
+			path = GTM;
+			sourceTree = "<group>";
+		};
+		EE4042D815F4DDFE00649F65 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				EE4042D915F4DDFE00649F65 /* GTMBase64.h */,
+				EE4042DA15F4DDFE00649F65 /* GTMBase64.m */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		EECDC33416210F8A0039DE8A /* httpclient */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC33516210F8A0039DE8A /* Methods */,
+				EECDC34316210F8A0039DE8A /* Parts */,
+				EECDC34916210F8A0039DE8A /* Utilities */,
+			);
+			path = httpclient;
+			sourceTree = "<group>";
+		};
+		EECDC33516210F8A0039DE8A /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC33616210F8A0039DE8A /* BasicMethod.h */,
+				EECDC33716210F8A0039DE8A /* BasicMethod.m */,
+				EECDC33816210F8A0039DE8A /* DeleteMethod.h */,
+				EECDC33916210F8A0039DE8A /* DeleteMethod.m */,
+				EECDC33A16210F8A0039DE8A /* GetMethod.h */,
+				EECDC33B16210F8A0039DE8A /* GetMethod.m */,
+				EECDC33C16210F8A0039DE8A /* HttpMethod.h */,
+				EECDC33D16210F8A0039DE8A /* MultipartMethod.h */,
+				EECDC33E16210F8A0039DE8A /* MultipartMethod.m */,
+				EECDC33F16210F8A0039DE8A /* PostMethod.h */,
+				EECDC34016210F8A0039DE8A /* PostMethod.m */,
+				EECDC34116210F8A0039DE8A /* PutMethod.h */,
+				EECDC34216210F8A0039DE8A /* PutMethod.m */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		EECDC34316210F8A0039DE8A /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC34416210F8A0039DE8A /* FilePart.h */,
+				EECDC34516210F8A0039DE8A /* FilePart.m */,
+				EECDC34616210F8A0039DE8A /* Part.h */,
+				EECDC34716210F8A0039DE8A /* StringPart.h */,
+				EECDC34816210F8A0039DE8A /* StringPart.m */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		EECDC34916210F8A0039DE8A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC34A16210F8A0039DE8A /* Constants.h */,
+				EECDC34B16210F8A0039DE8A /* DelegateMessenger.h */,
+				EECDC34C16210F8A0039DE8A /* DelegateMessenger.m */,
+				EECDC34D16210F8A0039DE8A /* HttpClient.h */,
+				EECDC34E16210F8A0039DE8A /* HttpClientDelegate.h */,
+				EECDC34F16210F8A0039DE8A /* HttpClientGzipUtility.h */,
+				EECDC35016210F8A0039DE8A /* HttpClientGzipUtility.m */,
+				EECDC35116210F8A0039DE8A /* HttpResponse.h */,
+				EECDC35216210F8A0039DE8A /* HttpResponse.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EECDC35316210F8A0039DE8A /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC35416210F8A0039DE8A /* Reachability.h */,
+				EECDC35516210F8A0039DE8A /* Reachability.m */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		EECDC35A16210F8A0039DE8A /* zip */ = {
+			isa = PBXGroup;
+			children = (
+				A169E599183E1DE200C1BBE1 /* ZipArchive.m */,
+				EECDC35B16210F8A0039DE8A /* minizip */,
+				EECDC36516210F8A0039DE8A /* ZipArchive.h */,
+			);
+			path = zip;
+			sourceTree = "<group>";
+		};
+		EECDC35B16210F8A0039DE8A /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				EECDC35C16210F8A0039DE8A /* crypt.h */,
+				EECDC35D16210F8A0039DE8A /* ioapi.c */,
+				EECDC35E16210F8A0039DE8A /* ioapi.h */,
+				EECDC35F16210F8A0039DE8A /* mztools.c */,
+				EECDC36016210F8A0039DE8A /* mztools.h */,
+				EECDC36116210F8A0039DE8A /* unzip.c */,
+				EECDC36216210F8A0039DE8A /* unzip.h */,
+				EECDC36316210F8A0039DE8A /* zip.c */,
+				EECDC36416210F8A0039DE8A /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		EEF4536D166495BC0070B446 /* SalamaDataService */ = {
+			isa = PBXGroup;
+			children = (
+				EEF4536E166495BC0070B446 /* SalamaDataService */,
+			);
+			name = SalamaDataService;
+			path = ../SalamaDataService;
+			sourceTree = "<group>";
+		};
+		EEF4536E166495BC0070B446 /* SalamaDataService */ = {
+			isa = PBXGroup;
+			children = (
+				EEF4536F166495BC0070B446 /* ExtraIndexManager.h */,
+				EEF45370166495BC0070B446 /* ExtraIndexManager.m */,
+				EEF45371166495BC0070B446 /* LocalStorageService.h */,
+				EEF45372166495BC0070B446 /* LocalStorageService.m */,
+				EEF45373166495BC0070B446 /* param */,
+				EEF4537C166495BC0070B446 /* ResourceDownloadHandler.h */,
+				EEF4537D166495BC0070B446 /* ResourceDownloadTaskService.h */,
+				EEF4537E166495BC0070B446 /* ResourceDownloadTaskService.m */,
+				EEF45380166495BC0070B446 /* SalamaDataService.h */,
+				EEF45381166495BC0070B446 /* SalamaDataService.m */,
+				EEF45382166495BC0070B446 /* SalamaDataServiceConfig.h */,
+				EEF45383166495BC0070B446 /* SalamaDataServiceConfig.m */,
+				EEF45386166495BC0070B446 /* WebService.h */,
+				EEF45387166495BC0070B446 /* WebService.m */,
+			);
+			path = SalamaDataService;
+			sourceTree = "<group>";
+		};
+		EEF45373166495BC0070B446 /* param */ = {
+			isa = PBXGroup;
+			children = (
+				EEF45374166495BC0070B446 /* DataQueryParam.h */,
+				EEF45375166495BC0070B446 /* DataQueryParam.m */,
+				EEF45376166495BC0070B446 /* LocalQueryParam.h */,
+				EEF45377166495BC0070B446 /* LocalQueryParam.m */,
+				EEF45378166495BC0070B446 /* LocalStorageParam.h */,
+				EEF45379166495BC0070B446 /* LocalStorageParam.m */,
+				EEF4537A166495BC0070B446 /* WebServiceParam.h */,
+				EEF4537B166495BC0070B446 /* WebServiceParam.m */,
+			);
+			path = param;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EE40421715F4C3A500649F65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE40422C15F4C3E100649F65 /* CommonWebViewController.h in Headers */,
+				EE4042A815F4DDE900649F65 /* SalamaWebCore.h in Headers */,
+				EE4042A915F4DDE900649F65 /* InvokeMsg.h in Headers */,
+				EE4042AB15F4DDE900649F65 /* LocalWebViewController.h in Headers */,
+				EE4042AD15F4DDE900649F65 /* NativeService.h in Headers */,
+				EE4042AF15F4DDE900649F65 /* WebController.h in Headers */,
+				EE4042B115F4DDE900649F65 /* WebManager.h in Headers */,
+				EE4042E215F4DDFE00649F65 /* DataTableSetting.h in Headers */,
+				EE4042E415F4DDFE00649F65 /* DBDataSqlConsts.h in Headers */,
+				EE4042E515F4DDFE00649F65 /* DBDataUtil.h in Headers */,
+				EE4042E715F4DDFE00649F65 /* DBManager.h in Headers */,
+				EE4042E915F4DDFE00649F65 /* BaseTypeConverter.h in Headers */,
+				EE4042EB15F4DDFE00649F65 /* BaseTypesMapping.h in Headers */,
+				EE4042ED15F4DDFE00649F65 /* SimpleMetoXML.h in Headers */,
+				EE4042F015F4DDFE00649F65 /* SalamaDataCore.h in Headers */,
+				EE4042F115F4DDFE00649F65 /* SqliteException.h in Headers */,
+				EE4042F315F4DDFE00649F65 /* SqliteUtil.h in Headers */,
+				EE4042F515F4DDFE00649F65 /* GTMBase64.h in Headers */,
+				EE4042F715F4DDFE00649F65 /* GTMDefines.h in Headers */,
+				EE4042F815F4DDFE00649F65 /* PropertyInfo.h in Headers */,
+				EE4042FA15F4DDFE00649F65 /* PropertyInfoUtil.h in Headers */,
+				EE4042FC15F4DDFE00649F65 /* XmlContentEncoder.h in Headers */,
+				EE22D09015FF39A10037CFAE /* IpAddress.h in Headers */,
+				EE22D09115FF39A10037CFAE /* IpAddressHelper.h in Headers */,
+				EE22D09315FF39A10037CFAE /* ResourceFileManager.h in Headers */,
+				EE22D09715FF39A10037CFAE /* TimeUtil.h in Headers */,
+				EECDC32F1620E9AE0039DE8A /* PageLoadingAnimationView.h in Headers */,
+				EECDC36716210F8A0039DE8A /* HostReachabilityUtil.h in Headers */,
+				EECDC36916210F8A0039DE8A /* BasicMethod.h in Headers */,
+				EECDC36B16210F8A0039DE8A /* DeleteMethod.h in Headers */,
+				EECDC36D16210F8A0039DE8A /* GetMethod.h in Headers */,
+				EECDC36F16210F8A0039DE8A /* HttpMethod.h in Headers */,
+				EECDC37016210F8A0039DE8A /* MultipartMethod.h in Headers */,
+				EECDC37216210F8A0039DE8A /* PostMethod.h in Headers */,
+				EECDC37416210F8A0039DE8A /* PutMethod.h in Headers */,
+				EECDC37616210F8A0039DE8A /* FilePart.h in Headers */,
+				EECDC37816210F8A0039DE8A /* Part.h in Headers */,
+				EECDC37916210F8A0039DE8A /* StringPart.h in Headers */,
+				EECDC37B16210F8A0039DE8A /* Constants.h in Headers */,
+				EECDC37C16210F8A0039DE8A /* DelegateMessenger.h in Headers */,
+				EECDC37E16210F8A0039DE8A /* HttpClient.h in Headers */,
+				EECDC37F16210F8A0039DE8A /* HttpClientDelegate.h in Headers */,
+				EECDC38016210F8A0039DE8A /* HttpClientGzipUtility.h in Headers */,
+				EECDC38216210F8A0039DE8A /* HttpResponse.h in Headers */,
+				EECDC38416210F8A0039DE8A /* Reachability.h in Headers */,
+				EECDC38616210F8A0039DE8A /* URLStringEncoder.h in Headers */,
+				EECDC38816210F8A0039DE8A /* WebServiceUtil.h in Headers */,
+				EECDC38A16210F8A0039DE8A /* crypt.h in Headers */,
+				A169E597183E1D8200C1BBE1 /* SSLog.h in Headers */,
+				EECDC38C16210F8A0039DE8A /* ioapi.h in Headers */,
+				EECDC38E16210F8A0039DE8A /* mztools.h in Headers */,
+				EECDC39016210F8A0039DE8A /* unzip.h in Headers */,
+				EECDC39216210F8A0039DE8A /* zip.h in Headers */,
+				EECDC39316210F8A0039DE8A /* ZipArchive.h in Headers */,
+				EECDC3971621199F0039DE8A /* PageLoadWebViewController.h in Headers */,
+				EEF4536A166494EE0070B446 /* ViewService.h in Headers */,
+				EEF4536C166494EE0070B446 /* WebVariableStack.h in Headers */,
+				EEF4538E166495BC0070B446 /* ExtraIndexManager.h in Headers */,
+				EEF45390166495BC0070B446 /* LocalStorageService.h in Headers */,
+				EEF45392166495BC0070B446 /* DataQueryParam.h in Headers */,
+				EEF45394166495BC0070B446 /* LocalQueryParam.h in Headers */,
+				EEF45396166495BC0070B446 /* LocalStorageParam.h in Headers */,
+				EEF45398166495BC0070B446 /* WebServiceParam.h in Headers */,
+				EEF4539A166495BC0070B446 /* ResourceDownloadHandler.h in Headers */,
+				EEF4539B166495BC0070B446 /* ResourceDownloadTaskService.h in Headers */,
+				EEF4539E166495BC0070B446 /* SalamaDataService.h in Headers */,
+				EEF453A0166495BC0070B446 /* SalamaDataServiceConfig.h in Headers */,
+				EEF453A4166495BC0070B446 /* WebService.h in Headers */,
+				EE5FDF3B1689C3CE00C3EF9A /* SalamaUtils.h in Headers */,
+				A1F156CE17BB8C5F00860A22 /* TableDesc.h in Headers */,
+				A1F156D217BB8E8B00860A22 /* BaseWebViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EE40421815F4C3A500649F65 /* SalamaWebViewUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE40422615F4C3A500649F65 /* Build configuration list for PBXNativeTarget "SalamaWebViewUtils" */;
+			buildPhases = (
+				EE40421515F4C3A500649F65 /* Sources */,
+				EE40421615F4C3A500649F65 /* Frameworks */,
+				EE40421715F4C3A500649F65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SalamaWebViewUtils;
+			productName = SalamaWebViewUtils;
+			productReference = EE40421915F4C3A500649F65 /* libSalamaWebViewUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE40421015F4C3A500649F65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = EE40421315F4C3A500649F65 /* Build configuration list for PBXProject "SalamaWebViewUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE40420E15F4C3A500649F65;
+			productRefGroup = EE40421A15F4C3A500649F65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE40421815F4C3A500649F65 /* SalamaWebViewUtils */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE40421515F4C3A500649F65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE40422D15F4C3E100649F65 /* CommonWebViewController.m in Sources */,
+				EE4042AA15F4DDE900649F65 /* InvokeMsg.m in Sources */,
+				EE4042AC15F4DDE900649F65 /* LocalWebViewController.m in Sources */,
+				EE4042AE15F4DDE900649F65 /* NativeService.m in Sources */,
+				EE4042B015F4DDE900649F65 /* WebController.m in Sources */,
+				EE4042B215F4DDE900649F65 /* WebManager.m in Sources */,
+				A169E598183E1D8200C1BBE1 /* SSLog.m in Sources */,
+				EE4042E315F4DDFE00649F65 /* DataTableSetting.m in Sources */,
+				EE4042E615F4DDFE00649F65 /* DBDataUtil.m in Sources */,
+				EE4042E815F4DDFE00649F65 /* DBManager.m in Sources */,
+				EE4042EA15F4DDFE00649F65 /* BaseTypeConverter.m in Sources */,
+				EE4042EC15F4DDFE00649F65 /* BaseTypesMapping.m in Sources */,
+				EE4042EE15F4DDFE00649F65 /* SimpleMetoXML.m in Sources */,
+				EE4042F215F4DDFE00649F65 /* SqliteException.m in Sources */,
+				EE4042F415F4DDFE00649F65 /* SqliteUtil.m in Sources */,
+				EE4042F615F4DDFE00649F65 /* GTMBase64.m in Sources */,
+				EE4042F915F4DDFE00649F65 /* PropertyInfo.m in Sources */,
+				EE4042FB15F4DDFE00649F65 /* PropertyInfoUtil.m in Sources */,
+				EE4042FD15F4DDFE00649F65 /* XmlContentEncoder.m in Sources */,
+				EE22D08F15FF39A10037CFAE /* IpAddress.c in Sources */,
+				EE22D09215FF39A10037CFAE /* IpAddressHelper.m in Sources */,
+				EE22D09415FF39A10037CFAE /* ResourceFileManager.m in Sources */,
+				EE22D09815FF39A10037CFAE /* TimeUtil.m in Sources */,
+				EECDC3301620E9AE0039DE8A /* PageLoadingAnimationView.m in Sources */,
+				EECDC36816210F8A0039DE8A /* HostReachabilityUtil.m in Sources */,
+				EECDC36A16210F8A0039DE8A /* BasicMethod.m in Sources */,
+				EECDC36C16210F8A0039DE8A /* DeleteMethod.m in Sources */,
+				EECDC36E16210F8A0039DE8A /* GetMethod.m in Sources */,
+				EECDC37116210F8A0039DE8A /* MultipartMethod.m in Sources */,
+				EECDC37316210F8A0039DE8A /* PostMethod.m in Sources */,
+				EECDC37516210F8A0039DE8A /* PutMethod.m in Sources */,
+				EECDC37716210F8A0039DE8A /* FilePart.m in Sources */,
+				A169E59A183E1DE200C1BBE1 /* ZipArchive.m in Sources */,
+				EECDC37A16210F8A0039DE8A /* StringPart.m in Sources */,
+				EECDC37D16210F8A0039DE8A /* DelegateMessenger.m in Sources */,
+				EECDC38116210F8A0039DE8A /* HttpClientGzipUtility.m in Sources */,
+				EECDC38316210F8A0039DE8A /* HttpResponse.m in Sources */,
+				EECDC38516210F8A0039DE8A /* Reachability.m in Sources */,
+				EECDC38716210F8A0039DE8A /* URLStringEncoder.m in Sources */,
+				EECDC38916210F8A0039DE8A /* WebServiceUtil.m in Sources */,
+				EECDC38B16210F8A0039DE8A /* ioapi.c in Sources */,
+				EECDC38D16210F8A0039DE8A /* mztools.c in Sources */,
+				EECDC38F16210F8A0039DE8A /* unzip.c in Sources */,
+				EECDC39116210F8A0039DE8A /* zip.c in Sources */,
+				EECDC3981621199F0039DE8A /* PageLoadWebViewController.m in Sources */,
+				EEF4536B166494EE0070B446 /* ViewService.m in Sources */,
+				EEF4538F166495BC0070B446 /* ExtraIndexManager.m in Sources */,
+				EEF45391166495BC0070B446 /* LocalStorageService.m in Sources */,
+				EEF45393166495BC0070B446 /* DataQueryParam.m in Sources */,
+				EEF45395166495BC0070B446 /* LocalQueryParam.m in Sources */,
+				EEF45397166495BC0070B446 /* LocalStorageParam.m in Sources */,
+				EEF45399166495BC0070B446 /* WebServiceParam.m in Sources */,
+				EEF4539C166495BC0070B446 /* ResourceDownloadTaskService.m in Sources */,
+				EEF4539F166495BC0070B446 /* SalamaDataService.m in Sources */,
+				EEF453A1166495BC0070B446 /* SalamaDataServiceConfig.m in Sources */,
+				EEF453A5166495BC0070B446 /* WebService.m in Sources */,
+				A1F156CF17BB8C5F00860A22 /* TableDesc.m in Sources */,
+				A1F156D317BB8E8B00860A22 /* BaseWebViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE40422415F4C3A500649F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EE40422515F4C3A500649F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE40422715F4C3A500649F65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DSTROOT = /tmp/SalamaWebViewUtils.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalamaWebViewUtils/SalamaWebViewUtils-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Debug;
+		};
+		EE40422815F4C3A500649F65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				DSTROOT = /tmp/SalamaWebViewUtils.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SalamaWebViewUtils/SalamaWebViewUtils-Prefix.pch";
+				GCC_VERSION = "";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "armv7 armv7s arm64";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE40421315F4C3A500649F65 /* Build configuration list for PBXProject "SalamaWebViewUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE40422415F4C3A500649F65 /* Debug */,
+				EE40422515F4C3A500649F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE40422615F4C3A500649F65 /* Build configuration list for PBXNativeTarget "SalamaWebViewUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE40422715F4C3A500649F65 /* Debug */,
+				EE40422815F4C3A500649F65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE40421015F4C3A500649F65 /* Project object */;
+}
