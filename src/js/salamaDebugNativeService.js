@@ -90,6 +90,10 @@ SOFTWARE.
 	    		if(method == "registerJSCallBackToNotification") {
 	    			//notificationJSMap[params[0]] = params[1];
 	    			setDebugVar("notificationJSMap", params[0], params[1]);
+	    		} else if(method == "presentPage") {
+	    			window.location = params[0];
+	    		} else if(method == "pushPage") {
+	    			window.location = params[0];
 	    		} else if(method == "createPageView") {
 	    			//tempVarMap[returnValueKeeper] = params[0];
 	    			setDebugVar("tempVarMap", returnValueKeeper, params[0]);
