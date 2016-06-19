@@ -272,7 +272,7 @@
 
 -(void)log:(NSString*)msg
 {
-    SSLogDebug(@"javascript log:%@", msg);
+    SSLogDebug(@"%@ %@", self.localPage, msg);
 }
 
 -(NSString*)callJavaScript:(NSString*)functionName params:(NSArray*)params
