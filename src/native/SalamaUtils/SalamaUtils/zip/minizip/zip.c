@@ -189,12 +189,14 @@ local void init_linkedlist(ll)
     ll->first_block = ll->last_block = NULL;
 }
 
+/* unused (modified by XingGu Liu)
 local void free_linkedlist(ll)
     linkedlist_data* ll;
 {
     free_datablock(ll->first_block);
     ll->first_block = ll->last_block = NULL;
 }
+*/
 
 
 local int add_data_in_datablock(ll,buf,len)
@@ -373,7 +375,7 @@ local int ziplocal_getShort (pzlib_filefunc_def,filestream,pX)
     uLong *pX;
 {
     uLong x ;
-    int i;
+    int i = 0;
     int err;
 
     err = ziplocal_getByte(pzlib_filefunc_def,filestream,&i);

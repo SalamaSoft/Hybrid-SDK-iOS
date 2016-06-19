@@ -47,7 +47,7 @@
     
     while (*cur != '\0') {
         if (output - buffer > buffer_size - 10) {
-            int indx = output - buffer;
+            long indx = output - buffer;
 
             buffer_size += 500;
             buffer = (char*)realloc(buffer, buffer_size);
@@ -129,7 +129,7 @@
     
     while (*cur != '\0') {
         if (output - buffer > buffer_size - 10) {
-            int indx = output - buffer;
+            long indx = output - buffer;
             
             buffer_size += 500;
             buffer = (char*)realloc(buffer, buffer_size);

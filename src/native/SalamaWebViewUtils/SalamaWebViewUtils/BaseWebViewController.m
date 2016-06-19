@@ -22,7 +22,7 @@
     NSString* jsCallBack = [self.viewController getJSCallBackWithSenderTag:alertView.tag];
     if(jsCallBack != nil && jsCallBack.length > 0)
     {
-        [self.viewController callJavaScript:jsCallBack params:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%i", buttonIndex], nil]];
+        [self.viewController callJavaScript:jsCallBack params:[NSArray arrayWithObjects:[NSString stringWithFormat:@"%lld", (long long)buttonIndex], nil]];
     }
 }
 
@@ -116,14 +116,14 @@
 }
 
 
-- (void)registerJSCallBackToSender:(int)senderTag jsCallBack:(NSString *)jsCallBack
+- (void)registerJSCallBackToSender:(NSInteger)senderTag jsCallBack:(NSString *)jsCallBack
 {
-    [_senderTagToJSCallBackMapping setObject:jsCallBack forKey:[NSNumber numberWithInt:senderTag]];
+    [_senderTagToJSCallBackMapping setObject:jsCallBack forKey:[NSNumber numberWithInteger:senderTag]];
 }
 
-- (NSString *)getJSCallBackWithSenderTag:(int)senderTag
+- (NSString *)getJSCallBackWithSenderTag:(NSInteger)senderTag
 {
-    return [_senderTagToJSCallBackMapping objectForKey:[NSNumber numberWithInt:senderTag]];
+    return [_senderTagToJSCallBackMapping objectForKey:[NSNumber numberWithInteger:senderTag]];
 }
 
 - (void)notifyToJSCallBack:(NSNotification *)notification

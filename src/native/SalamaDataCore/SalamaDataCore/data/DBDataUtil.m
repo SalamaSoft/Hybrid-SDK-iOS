@@ -271,9 +271,8 @@
         propertyInfo = [propertyArray objectAtIndex:0];
         [sql appendFormat:DB_SQL_FORMAT_INSERT_SET_COLUMN_0, propertyInfo.propertyName];
         
-        int i;
-        int propertyCount = propertyArray.count;
-        for(i = 1; i < propertyCount; i++)
+        NSInteger propertyCount = propertyArray.count;
+        for(NSInteger i = 1; i < propertyCount; i++)
         {
             propertyInfo = [propertyArray objectAtIndex:i];
             
@@ -299,7 +298,7 @@
             [sql appendFormat:DB_SQL_FORMAT_INSERT_SET_COLUMN_0_VALUE_NUMBER, [BaseTypesMapping getPropertyStringValueWithData:data propertyInfo:propertyInfo]];
         }
         
-        for(i = 1; i < propertyCount; i++)
+        for(NSInteger i = 1; i < propertyCount; i++)
         {
             propertyInfo = [propertyArray objectAtIndex:i];
             sqliteType = [SqliteUtil getSQLiteColumnTypeByPropertyType:propertyInfo.propertyType];

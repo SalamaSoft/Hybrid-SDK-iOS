@@ -169,7 +169,7 @@
     }
     
     //sql
-    int sqlPrefixLength = sqlFormat.length;
+    NSInteger sqlPrefixLength = sqlFormat.length;
     NSRange rangeOfSqlDataPKPart;
     rangeOfSqlDataPKPart.location = sqlFormat.length;
     

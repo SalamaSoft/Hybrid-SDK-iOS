@@ -35,8 +35,8 @@
 
 - (int)getNewSenderTag;
 
-- (void)registerJSCallBackToSender:(int)senderTag jsCallBack:(NSString*)jsCallBack;
-- (NSString*)getJSCallBackWithSenderTag:(int)senderTag;
+- (void)registerJSCallBackToSender:(NSInteger)senderTag jsCallBack:(NSString*)jsCallBack;
+- (NSString*)getJSCallBackWithSenderTag:(NSInteger)senderTag;
 
 -(void)notifyToJSCallBack:(NSNotification *)notification;
 

@@ -33,7 +33,9 @@
 
 - (void)dealloc
 {
+#ifdef CLANG_OBJC_ARC_DISABLED
     dispatch_release(_downloadQueue);
+#endif
 }
 
 - (dispatch_queue_t)downloadQueue

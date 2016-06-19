@@ -150,14 +150,14 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
 {
 	Reachability* retVal = NULL;
 	SCNetworkReachabilityRef reachability = SCNetworkReachabilityCreateWithName(NULL, [hostName UTF8String]);
-	if(reachability!= NULL)
+	if(reachability != NULL)
 	{
 #ifdef CLANG_OBJC_ARC_DISABLED
-		retVal= [[[self alloc] init] autorelease];
+		retVal = [[[self alloc] init] autorelease];
 #else
-		retVal= [[self alloc] init];
+		retVal = [[self alloc] init];
 #endif
-		if(retVal!= NULL)
+		if(retVal != NULL)
 		{
 			retVal->reachabilityRef = reachability;
 			retVal->localWiFiRef = NO;

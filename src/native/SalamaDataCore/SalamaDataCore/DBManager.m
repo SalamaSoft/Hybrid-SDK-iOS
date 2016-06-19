@@ -14,7 +14,7 @@
 
 + (BOOL)checkDbDir:(NSString*)dbDirPath;
 
-+ (void)setSkipBackupAttributeToFilePath:(NSString *)filePath;
++ (BOOL)setSkipBackupAttributeToFilePath:(NSString *)filePath;
 
 @end
 

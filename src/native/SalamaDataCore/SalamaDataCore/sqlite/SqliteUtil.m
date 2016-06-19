@@ -92,7 +92,7 @@ static NSLock* _sqliteLock = nil;
 {
     NSString* errorMsg = [SqliteUtil errorMsgOfException:exception];
     
-    NSLog(errorMsg);
+    NSLog(@"%@", errorMsg);
 }
 
 + (NSString *)errorMsgOfException:(NSException *)exception

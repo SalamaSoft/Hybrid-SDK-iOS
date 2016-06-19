@@ -32,7 +32,7 @@ typedef enum PageLoadingAnimationViewContentVAlign{
     NSString* _titleWhenDraggingBeforeLoadingPreparedRange;
     NSString* _titleWhenDraggingInLoadingRange;
     NSString* _titleWhenOnLoading;
-    float _titleLabelHeight;
+    //float _titleLabelHeight;
 }
 
 /**

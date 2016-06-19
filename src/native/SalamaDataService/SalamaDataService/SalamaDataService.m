@@ -57,9 +57,10 @@
 
 - (void)dealloc
 {
+#ifdef CLANG_OBJC_ARC_DISABLED
     dispatch_release(_queueForQueryWebService);
     dispatch_release(_queueForQueryLocalDB);
-    
+#endif
     _webService.resourceFileManager = nil;
     _webService = nil;
     

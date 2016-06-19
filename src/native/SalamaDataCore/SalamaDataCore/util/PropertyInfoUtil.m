@@ -63,9 +63,9 @@ static NSMutableDictionary* _dataPropertyInfoArrayDict;
     
     NSArray* superClassArray = [PropertyInfoUtil findAllSuperClass:dataCls];
     
-    int superClassCount = superClassArray.count;
+    NSInteger superClassCount = superClassArray.count;
     
-    for(int i = superClassCount - 1; i >= 0; i--)
+    for(NSInteger i = superClassCount - 1; i >= 0; i--)
     {
         [PropertyInfoUtil getPropertyInfoArrayNotIncludeSuperClass:[superClassArray objectAtIndex:i] propertyArray:propertyArray];
     }
@@ -101,11 +101,11 @@ static NSMutableDictionary* _dataPropertyInfoArrayDict;
     
     NSArray* superClassArray = [PropertyInfoUtil findAllSuperClass:dataCls];
     
-    int superClassCount = superClassArray.count;
+    NSInteger superClassCount = superClassArray.count;
     
     if(superClassCount > 0)
     {
-        for(int i = superClassCount - 1; i >= 0; i--)
+        for(NSInteger i = superClassCount - 1; i >= 0; i--)
         {
             [PropertyInfoUtil getPropertyInfoMapNotIncludeSuperClass:[superClassArray objectAtIndex:i] propertyDict:propertyDict];
         }

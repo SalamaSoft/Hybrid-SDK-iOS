@@ -441,7 +441,7 @@ static NSString* SPECIAL_SERVICE_THIS_VIEW = @"thisView";
     }
     else if(argType == 'L') 
     {
-        unsigned long paramVal = [param longLongValue];
+        unsigned long long paramVal = [param longLongValue];
         [invocation setArgument:&paramVal atIndex:index];
     }
     else if(argType == 'd') 
@@ -471,12 +471,12 @@ static NSString* SPECIAL_SERVICE_THIS_VIEW = @"thisView";
     }
     else if(argType == 'I') 
     {
-        unsigned int paramVal = [param longLongValue];
+        unsigned long long paramVal = [param longLongValue];
         [invocation setArgument:&paramVal atIndex:index];
     }
     else if(argType == 'l') 
     {
-        long paramVal = [param longLongValue];
+        long long paramVal = [param longLongValue];
         [invocation setArgument:&paramVal atIndex:index];
     }
     else if(argType == 'q') 

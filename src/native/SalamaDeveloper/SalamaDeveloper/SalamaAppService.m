@@ -91,9 +91,10 @@
 
 @synthesize dataService = _dataService;
 @synthesize webService = _webService;
+
 @synthesize userService;
 
-@synthesize nativeService;
+@synthesize nativeService = _nativeService;
 @synthesize cloudService;
 
 - (SalamaUserService *)userService
@@ -103,7 +104,7 @@
 
 - (SalamaNativeService *)nativeService
 {
-    return [SalamaNativeService singleton];
+    return _nativeService;
 }
 
 - (SalamaCloudService *)cloudService
@@ -439,6 +440,7 @@ static SalamaAppService* _singleton;
     _dataService = [[SalamaDataService alloc] initWithConfig:config];
     //_dataService.resourceDownloadHandler = [[MerchantImageResourceDownloadHandler alloc] init];
     
+    _nativeService = [[SalamaNativeService alloc] initWithDataService:_dataService];
     [self initWebService];
 }
 

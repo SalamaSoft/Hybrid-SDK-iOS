@@ -10,6 +10,10 @@
 		A169E597183E1D8200C1BBE1 /* SSLog.h in Headers */ = {isa = PBXBuildFile; fileRef = A169E595183E1D8200C1BBE1 /* SSLog.h */; };
 		A169E598183E1D8200C1BBE1 /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A169E596183E1D8200C1BBE1 /* SSLog.m */; };
 		A169E59A183E1DE200C1BBE1 /* ZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A169E599183E1DE200C1BBE1 /* ZipArchive.m */; };
+		A1B938861D166F4F008D857E /* EasyTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B938831D166F4F008D857E /* EasyTabBarController.h */; };
+		A1B938871D166F4F008D857E /* EasyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B938841D166F4F008D857E /* EasyTabBarController.m */; };
+		A1B938881D166F4F008D857E /* WebViewTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B938851D166F4F008D857E /* WebViewTabBarController.h */; };
+		A1B9388A1D166F55008D857E /* WebViewTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B938891D166F55008D857E /* WebViewTabBarController.m */; };
 		A1F156CE17BB8C5F00860A22 /* TableDesc.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F156CC17BB8C5F00860A22 /* TableDesc.h */; };
 		A1F156CF17BB8C5F00860A22 /* TableDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F156CD17BB8C5F00860A22 /* TableDesc.m */; };
 		A1F156D217BB8E8B00860A22 /* BaseWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */; };
@@ -144,6 +148,10 @@
 		A169E595183E1D8200C1BBE1 /* SSLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSLog.h; sourceTree = "<group>"; };
 		A169E596183E1D8200C1BBE1 /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
 		A169E599183E1DE200C1BBE1 /* ZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipArchive.m; sourceTree = "<group>"; };
+		A1B938831D166F4F008D857E /* EasyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTabBarController.h; sourceTree = "<group>"; };
+		A1B938841D166F4F008D857E /* EasyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTabBarController.m; sourceTree = "<group>"; };
+		A1B938851D166F4F008D857E /* WebViewTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewTabBarController.h; sourceTree = "<group>"; };
+		A1B938891D166F55008D857E /* WebViewTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewTabBarController.m; sourceTree = "<group>"; };
 		A1F156CC17BB8C5F00860A22 /* TableDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableDesc.h; sourceTree = "<group>"; };
 		A1F156CD17BB8C5F00860A22 /* TableDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableDesc.m; sourceTree = "<group>"; };
 		A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
@@ -361,14 +369,18 @@
 			children = (
 				A1F156D017BB8E8B00860A22 /* BaseWebViewController.h */,
 				A1F156D117BB8E8B00860A22 /* BaseWebViewController.m */,
-				EE40422115F4C3A500649F65 /* SalamaWebViewUtils.h */,
-				EE40421F15F4C3A500649F65 /* Supporting Files */,
 				EE40422915F4C3E100649F65 /* CommonWebViewController.h */,
 				EE40422A15F4C3E100649F65 /* CommonWebViewController.m */,
+				A1B938831D166F4F008D857E /* EasyTabBarController.h */,
+				A1B938841D166F4F008D857E /* EasyTabBarController.m */,
 				EECDC32D1620E9AE0039DE8A /* PageLoadingAnimationView.h */,
 				EECDC32E1620E9AE0039DE8A /* PageLoadingAnimationView.m */,
 				EECDC3951621199F0039DE8A /* PageLoadWebViewController.h */,
 				EECDC3961621199F0039DE8A /* PageLoadWebViewController.m */,
+				EE40422115F4C3A500649F65 /* SalamaWebViewUtils.h */,
+				EE40421F15F4C3A500649F65 /* Supporting Files */,
+				A1B938851D166F4F008D857E /* WebViewTabBarController.h */,
+				A1B938891D166F55008D857E /* WebViewTabBarController.m */,
 			);
 			path = SalamaWebViewUtils;
 			sourceTree = "<group>";
@@ -655,6 +667,7 @@
 				EE4042AB15F4DDE900649F65 /* LocalWebViewController.h in Headers */,
 				EE4042AD15F4DDE900649F65 /* NativeService.h in Headers */,
 				EE4042AF15F4DDE900649F65 /* WebController.h in Headers */,
+				A1B938861D166F4F008D857E /* EasyTabBarController.h in Headers */,
 				EE4042B115F4DDE900649F65 /* WebManager.h in Headers */,
 				EE4042E215F4DDFE00649F65 /* DataTableSetting.h in Headers */,
 				EE4042E415F4DDFE00649F65 /* DBDataSqlConsts.h in Headers */,
@@ -676,6 +689,7 @@
 				EE22D09315FF39A10037CFAE /* ResourceFileManager.h in Headers */,
 				EE22D09715FF39A10037CFAE /* TimeUtil.h in Headers */,
 				EECDC32F1620E9AE0039DE8A /* PageLoadingAnimationView.h in Headers */,
+				A1B938881D166F4F008D857E /* WebViewTabBarController.h in Headers */,
 				EECDC36716210F8A0039DE8A /* HostReachabilityUtil.h in Headers */,
 				EECDC36916210F8A0039DE8A /* BasicMethod.h in Headers */,
 				EECDC36B16210F8A0039DE8A /* DeleteMethod.h in Headers */,
@@ -749,7 +763,7 @@
 		EE40421015F4C3A500649F65 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = EE40421315F4C3A500649F65 /* Build configuration list for PBXProject "SalamaWebViewUtils" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -798,6 +812,7 @@
 				EE22D09815FF39A10037CFAE /* TimeUtil.m in Sources */,
 				EECDC3301620E9AE0039DE8A /* PageLoadingAnimationView.m in Sources */,
 				EECDC36816210F8A0039DE8A /* HostReachabilityUtil.m in Sources */,
+				A1B9388A1D166F55008D857E /* WebViewTabBarController.m in Sources */,
 				EECDC36A16210F8A0039DE8A /* BasicMethod.m in Sources */,
 				EECDC36C16210F8A0039DE8A /* DeleteMethod.m in Sources */,
 				EECDC36E16210F8A0039DE8A /* GetMethod.m in Sources */,
@@ -823,6 +838,7 @@
 				EEF45391166495BC0070B446 /* LocalStorageService.m in Sources */,
 				EEF45393166495BC0070B446 /* DataQueryParam.m in Sources */,
 				EEF45395166495BC0070B446 /* LocalQueryParam.m in Sources */,
+				A1B938871D166F4F008D857E /* EasyTabBarController.m in Sources */,
 				EEF45397166495BC0070B446 /* LocalStorageParam.m in Sources */,
 				EEF45399166495BC0070B446 /* WebServiceParam.m in Sources */,
 				EEF4539C166495BC0070B446 /* ResourceDownloadTaskService.m in Sources */,
@@ -841,15 +857,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -857,10 +878,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -869,19 +894,27 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -890,7 +923,6 @@
 		EE40422715F4C3A500649F65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/SalamaWebViewUtils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -908,7 +940,6 @@
 		EE40422815F4C3A500649F65 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/SalamaWebViewUtils.dst;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

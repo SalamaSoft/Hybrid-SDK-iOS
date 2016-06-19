@@ -65,6 +65,8 @@
     NSString* _textFileName;
     
     WebService* _webService;
+    SalamaNativeService* _nativeService;
+    
     BOOL _notUseEasyAppService;
 }
 

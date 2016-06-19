@@ -318,7 +318,9 @@ static bool debugMode = true;
     nativeService = nil;
     _sessionContainer = nil;
     
+#ifdef CLANG_OBJC_ARC_DISABLED
     dispatch_release(_queueForWeb);
+#endif
     _queueForWeb = nil;
 }
 

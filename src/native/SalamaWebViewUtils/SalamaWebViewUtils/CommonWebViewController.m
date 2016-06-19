@@ -191,6 +191,7 @@
 }
 - (void)didReceiveMemoryWarning
 {
+    [super didReceiveMemoryWarning];
     SSLogWarn(@"CommonWebViewController(page:%@) didReceiveMemoryWarning", self.localPage);
 }
 
@@ -203,7 +204,7 @@
     ;
 }
 
-- (NSUInteger)supportedInterfaceOrientations
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations
 {
     NSUInteger orientations = 0;
     
@@ -421,7 +422,7 @@ static BOOL _isDefaultEnableOrientationLandscapeRight = NO;
     NSArray* vcArray = [self.navigationController viewControllers];
     UIViewController* vc = nil;
     
-    for(int i = vcArray.count; i >= 0; i--)
+    for(NSInteger i = vcArray.count; i >= 0; i--)
     {
         vc = [vcArray objectAtIndex:i];
         if([vc isKindOfClass:[LocalWebViewController class]])
