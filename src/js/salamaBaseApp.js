@@ -43,6 +43,14 @@ SOFTWARE.
             _debugMode = isDebug;
         };
 
+        this.log = function (msg) {
+            _native.invoke({
+                target: "thisView",
+                method: "log",
+                params: [msg],
+            });
+        };
+
 		//------------------------  util ----------------------------------------
 		function SalamaSqlUtil() {
 			var _escapeSqlVal = function (sqlVal) {
