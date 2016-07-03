@@ -1003,6 +1003,12 @@
 		A1B936A11D12A069008D857E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+					armv6,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -1012,12 +1018,19 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Debug;
 		};
 		A1B936A21D12A069008D857E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					arm64,
+					armv7,
+					armv7s,
+					armv6,
+				);
 				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
 				CLANG_CXX_LIBRARY = "compiler-default";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
@@ -1026,6 +1039,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s armv6";
 			};
 			name = Release;
 		};

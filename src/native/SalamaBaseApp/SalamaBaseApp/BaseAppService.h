@@ -65,7 +65,6 @@
 
 /**
  * 生成dataId(可以作为本地数据库的数据主键)
- * 采用较为简单的方法：<udid> + <UTC>。方法内有锁，线程安全。但1秒只能产生1000个。
  */
 - (NSString*)generateNewDataId;
 

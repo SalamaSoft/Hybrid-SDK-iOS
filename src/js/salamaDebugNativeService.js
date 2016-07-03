@@ -122,7 +122,7 @@ SOFTWARE.
 	    		} else if (method == "popToPage") {
 	    			window.history.go(params[0]);
 				} else if (method == "log") {
-					console.log(window.location.pathname + " " + params[0]);
+					console.log(window.location.pathname + ": " + params[0]);
 	    		}
 	    		
 	    	} else {
