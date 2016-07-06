@@ -85,6 +85,14 @@
     }
 }
 
+- (void)setThisViewService:(id)thisViewService
+{
+    _thisViewService = nil;
+    _thisViewService = thisViewService;
+    
+    ((ViewService*)_thisViewService).thisView = self;
+}
+
 - (id)init
 {
     self = [super init];
