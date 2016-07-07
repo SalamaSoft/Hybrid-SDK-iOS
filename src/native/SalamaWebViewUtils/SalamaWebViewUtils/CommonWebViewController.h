@@ -132,7 +132,7 @@
 /**
  * 将jsCallBack同画面事件绑定
  * @param eventName 画面事件名
- * 支持的事件名: viewDidUnload, viewWillUnload, viewDidAppear, viewWillDisappear, viewDidDisappear
+ * 支持的事件名: viewWillAppear, viewDidAppear, viewDidLoad, viewWillDisappear, viewDidDisappear, viewWillUnload, viewDidUnload
  * @param jsCallBack JavaScript回调函数
  */
 - (void)registerJSCallBackToViewEvent:(NSString*)eventName jsCallBack:(NSString*)jsCallBack;
