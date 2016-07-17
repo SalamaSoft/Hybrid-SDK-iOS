@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1508F7B1D312793006EAB7E /* ExceptionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A1508F7A1D312793006EAB7E /* ExceptionUtil.m */; };
 		A1B937811D12A0B4008D857E /* FileService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B936A81D12A0B3008D857E /* FileService.m */; };
 		A1B937821D12A0B4008D857E /* SalamaNativeService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B936AA1D12A0B3008D857E /* SalamaNativeService.m */; };
 		A1B937831D12A0B4008D857E /* SqlService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1B936AD1D12A0B3008D857E /* SqlService.m */; };
@@ -100,6 +101,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A1508F791D312793006EAB7E /* ExceptionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionUtil.h; sourceTree = "<group>"; };
+		A1508F7A1D312793006EAB7E /* ExceptionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionUtil.m; sourceTree = "<group>"; };
 		A1B936971D12A069008D857E /* libSalamaBaseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSalamaBaseApp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1B936A71D12A0B3008D857E /* FileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileService.h; sourceTree = "<group>"; };
 		A1B936A81D12A0B3008D857E /* FileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileService.m; sourceTree = "<group>"; };
@@ -535,6 +538,8 @@
 		A1B936F91D12A0B4008D857E /* SalamaUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A1508F791D312793006EAB7E /* ExceptionUtil.h */,
+				A1508F7A1D312793006EAB7E /* ExceptionUtil.m */,
 				A1B936FA1D12A0B4008D857E /* ASIHTTPRequest */,
 				A1B937101D12A0B4008D857E /* ASIHTTPUtil.h */,
 				A1B937111D12A0B4008D857E /* ASIHTTPUtil.m */,
@@ -887,6 +892,7 @@
 				A1B937941D12A0B4008D857E /* LocalQueryParam.m in Sources */,
 				A1B937821D12A0B4008D857E /* SalamaNativeService.m in Sources */,
 				A1B937A51D12A0B4008D857E /* BasicMethod.m in Sources */,
+				A1508F7B1D312793006EAB7E /* ExceptionUtil.m in Sources */,
 				A1B937BD1D12A0B4008D857E /* ZipArchive.m in Sources */,
 				A1B937991D12A0B4008D857E /* SalamaDataServiceConfig.m in Sources */,
 				A1B937B91D12A0B4008D857E /* ioapi.c in Sources */,

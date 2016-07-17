@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A10074BB17A1265D00ABB0F3 /* SalamaAppService.m in Sources */ = {isa = PBXBuildFile; fileRef = A10074BA17A1265D00ABB0F3 /* SalamaAppService.m */; };
-		A10074C417A12C4400ABB0F3 /* ExceptionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A10074C317A12C4400ABB0F3 /* ExceptionUtil.m */; };
 		A10074C717A12C7300ABB0F3 /* FileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A10074C617A12C7300ABB0F3 /* FileUtil.m */; };
 		A11C9E0517C227B600B3BA5D /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C9DF017C227B600B3BA5D /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A11C9E0617C227B600B3BA5D /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C9DF317C227B600B3BA5D /* ASIDataCompressor.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -31,6 +30,7 @@
 		A11C9E3517C2287600B3BA5D /* SalamaCloudService.m in Sources */ = {isa = PBXBuildFile; fileRef = A11C9E3417C2287600B3BA5D /* SalamaCloudService.m */; };
 		A138F63917DC4DA400213D29 /* SSLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A138F63817DC4DA400213D29 /* SSLog.m */; };
 		A14BCE1B17A27BCE00A5DFC0 /* SalamaWebServiceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A14BCE1A17A27BCE00A5DFC0 /* SalamaWebServiceUtil.m */; };
+		A1508F7E1D3127B8006EAB7E /* ExceptionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A1508F7D1D3127B8006EAB7E /* ExceptionUtil.m */; };
 		A1AEE3FD17976A48006087A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AEE3FC17976A48006087A6 /* Foundation.framework */; };
 		A1AEE40B17976A7B006087A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1AEE40A17976A7B006087A6 /* SystemConfiguration.framework */; };
 		A1AEE4BD17976BD4006087A6 /* DataTableSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = A1AEE41017976BD3006087A6 /* DataTableSetting.m */; };
@@ -111,8 +111,6 @@
 /* Begin PBXFileReference section */
 		A10074B917A1265D00ABB0F3 /* SalamaAppService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaAppService.h; sourceTree = "<group>"; };
 		A10074BA17A1265D00ABB0F3 /* SalamaAppService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaAppService.m; sourceTree = "<group>"; };
-		A10074C217A12C4400ABB0F3 /* ExceptionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionUtil.h; sourceTree = "<group>"; };
-		A10074C317A12C4400ABB0F3 /* ExceptionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionUtil.m; sourceTree = "<group>"; };
 		A10074C517A12C7300ABB0F3 /* FileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtil.h; sourceTree = "<group>"; };
 		A10074C617A12C7300ABB0F3 /* FileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtil.m; sourceTree = "<group>"; };
 		A11C9DEF17C227B600B3BA5D /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
@@ -161,6 +159,8 @@
 		A138F63817DC4DA400213D29 /* SSLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSLog.m; sourceTree = "<group>"; };
 		A14BCE1917A27BCE00A5DFC0 /* SalamaWebServiceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalamaWebServiceUtil.h; sourceTree = "<group>"; };
 		A14BCE1A17A27BCE00A5DFC0 /* SalamaWebServiceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalamaWebServiceUtil.m; sourceTree = "<group>"; };
+		A1508F7C1D3127B8006EAB7E /* ExceptionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionUtil.h; sourceTree = "<group>"; };
+		A1508F7D1D3127B8006EAB7E /* ExceptionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionUtil.m; sourceTree = "<group>"; };
 		A1AEE3F917976A48006087A6 /* libSalamaDeveloper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSalamaDeveloper.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1AEE3FC17976A48006087A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A1AEE40017976A48006087A6 /* SalamaDeveloper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SalamaDeveloper-Prefix.pch"; sourceTree = "<group>"; };
@@ -570,6 +570,8 @@
 		A1AEE45517976BD4006087A6 /* SalamaUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A1508F7C1D3127B8006EAB7E /* ExceptionUtil.h */,
+				A1508F7D1D3127B8006EAB7E /* ExceptionUtil.m */,
 				A138F63717DC4DA400213D29 /* SSLog.h */,
 				A138F63817DC4DA400213D29 /* SSLog.m */,
 				A1F0968817D5C4320079B0C6 /* MD5Util.h */,
@@ -859,8 +861,6 @@
 			children = (
 				A11C9E1C17C2280E00B3BA5D /* SalamaWebService.h */,
 				A11C9E1D17C2280E00B3BA5D /* SalamaWebService.m */,
-				A10074C217A12C4400ABB0F3 /* ExceptionUtil.h */,
-				A10074C317A12C4400ABB0F3 /* ExceptionUtil.m */,
 				A10074C517A12C7300ABB0F3 /* FileUtil.h */,
 				A10074C617A12C7300ABB0F3 /* FileUtil.m */,
 				A14BCE1917A27BCE00A5DFC0 /* SalamaWebServiceUtil.h */,
@@ -979,7 +979,6 @@
 				A1AEE4F517976BD4006087A6 /* PageLoadingAnimationView.m in Sources */,
 				A1AEE4F617976BD4006087A6 /* PageLoadWebViewController.m in Sources */,
 				A10074BB17A1265D00ABB0F3 /* SalamaAppService.m in Sources */,
-				A10074C417A12C4400ABB0F3 /* ExceptionUtil.m in Sources */,
 				A10074C717A12C7300ABB0F3 /* FileUtil.m in Sources */,
 				A14BCE1B17A27BCE00A5DFC0 /* SalamaWebServiceUtil.m in Sources */,
 				A11C9E0517C227B600B3BA5D /* ASIAuthenticationDialog.m in Sources */,
@@ -996,6 +995,7 @@
 				A11C9E1717C2280400B3BA5D /* BaseWebViewController.m in Sources */,
 				A11C9E1817C2280400B3BA5D /* EasyTabBarController.m in Sources */,
 				A11C9E1917C2280400B3BA5D /* WebViewTabBarController.m in Sources */,
+				A1508F7E1D3127B8006EAB7E /* ExceptionUtil.m in Sources */,
 				A11C9E1F17C2280E00B3BA5D /* SalamaWebService.m in Sources */,
 				A11C9E2417C2281B00B3BA5D /* FileOperateResult.m in Sources */,
 				A11C9E2517C2281B00B3BA5D /* SalamaCloudFileService.m in Sources */,
