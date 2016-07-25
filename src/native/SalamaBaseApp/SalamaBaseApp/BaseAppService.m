@@ -68,6 +68,8 @@ static bool _debugMode = false;
         SSLogInfo(@"_webResourceDirName:%@", _webResourceDirName);
         SSLogInfo(@"_bundleId:%@", _bundleId);
 
+        _lockForNewDataId = [[NSLock alloc] init];
+        
         [self checkTextFile];
         
         [self initWebController];

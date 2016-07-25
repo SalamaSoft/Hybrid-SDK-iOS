@@ -150,6 +150,7 @@ static SalamaAppService* _singleton;
 {
     if(self = [super init])
     {
+        _lockForNewDataId = [[NSLock alloc] init];
         _udid = [SalamaAppService getUDIDFromDevice];
         _udidRemovedHyphen = [_udid stringByReplacingOccurrencesOfString:@"-" withString:@""];
         
