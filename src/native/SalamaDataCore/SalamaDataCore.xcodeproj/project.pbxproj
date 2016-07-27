@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A144BFA01D47176700403160 /* ExceptionUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = A144BF9E1D47176700403160 /* ExceptionUtil.h */; };
+		A144BFA11D47176700403160 /* ExceptionUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A144BF9F1D47176700403160 /* ExceptionUtil.m */; };
 		A17F8B6718A3C9F400097993 /* ASIAuthenticationDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = A17F8B0A18A3C9F400097993 /* ASIAuthenticationDialog.h */; };
 		A17F8B6818A3C9F400097993 /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B0B18A3C9F400097993 /* ASIAuthenticationDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A17F8B6918A3C9F400097993 /* ASICacheDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = A17F8B0C18A3C9F400097993 /* ASICacheDelegate.h */; };
@@ -116,7 +118,6 @@
 		EEC828C915DA22C20026B68A /* PropertyInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC828B115DA22C20026B68A /* PropertyInfoUtil.m */; };
 		EEC828CA15DA22C20026B68A /* XmlContentEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EEC828B215DA22C20026B68A /* XmlContentEncoder.h */; };
 		EEC828CB15DA22C20026B68A /* XmlContentEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC828B315DA22C20026B68A /* XmlContentEncoder.m */; };
-		EEC828CD15DA23510026B68A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EEC828CC15DA23510026B68A /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A144BF9E1D47176700403160 /* ExceptionUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExceptionUtil.h; sourceTree = "<group>"; };
+		A144BF9F1D47176700403160 /* ExceptionUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExceptionUtil.m; sourceTree = "<group>"; };
 		A17F8B0A18A3C9F400097993 /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		A17F8B0B18A3C9F400097993 /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
 		A17F8B0C18A3C9F400097993 /* ASICacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASICacheDelegate.h; sourceTree = "<group>"; };
@@ -243,7 +246,6 @@
 		EEC828B115DA22C20026B68A /* PropertyInfoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyInfoUtil.m; sourceTree = "<group>"; };
 		EEC828B215DA22C20026B68A /* XmlContentEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlContentEncoder.h; sourceTree = "<group>"; };
 		EEC828B315DA22C20026B68A /* XmlContentEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlContentEncoder.m; sourceTree = "<group>"; };
-		EEC828CC15DA23510026B68A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,7 +253,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEC828CD15DA23510026B68A /* libxml2.dylib in Frameworks */,
 				EEC8286E15DA1F4E0026B68A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +273,8 @@
 		A17F8B0718A3C9F400097993 /* SalamaUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A144BF9E1D47176700403160 /* ExceptionUtil.h */,
+				A144BF9F1D47176700403160 /* ExceptionUtil.m */,
 				A17F8B0818A3C9F400097993 /* ASIHTTPRequest */,
 				A17F8B1E18A3C9F400097993 /* ASIHTTPUtil.h */,
 				A17F8B1F18A3C9F400097993 /* ASIHTTPUtil.m */,
@@ -450,7 +453,6 @@
 			isa = PBXGroup;
 			children = (
 				A17F8B0618A3C9F400097993 /* SalamaUtils */,
-				EEC828CC15DA23510026B68A /* libxml2.dylib */,
 				EEC8286F15DA1F4E0026B68A /* SalamaDataCore */,
 				EEC8286C15DA1F4E0026B68A /* Frameworks */,
 				EEC8286B15DA1F4E0026B68A /* Products */,
@@ -619,6 +621,7 @@
 				A17F8B8C18A3C9F400097993 /* FilePart.h in Headers */,
 				A17F8B7F18A3C9F400097993 /* BasicMethod.h in Headers */,
 				A17F8B8318A3C9F400097993 /* GetMethod.h in Headers */,
+				A144BFA01D47176700403160 /* ExceptionUtil.h in Headers */,
 				A17F8B8E18A3C9F400097993 /* Part.h in Headers */,
 				A17F8B9E18A3C9F400097993 /* MD5Util.h in Headers */,
 				EEC828C115DA22C20026B68A /* SqliteUtil.h in Headers */,
@@ -748,6 +751,7 @@
 				A17F8B8718A3C9F400097993 /* MultipartMethod.m in Sources */,
 				A17F8BB318A3C9F400097993 /* unzip.c in Sources */,
 				EE40423415F4C7AC00649F65 /* DBManager.m in Sources */,
+				A144BFA11D47176700403160 /* ExceptionUtil.m in Sources */,
 				A17F8B8418A3C9F400097993 /* GetMethod.m in Sources */,
 				A17F8BB118A3C9F400097993 /* mztools.c in Sources */,
 				A17F8B9F18A3C9F400097993 /* MD5Util.m in Sources */,
@@ -807,8 +811,9 @@
 		EEC8287815DA1F4E0026B68A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/SalamaDataCore.dst;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalamaDataCore/SalamaDataCore-Prefix.pch";
@@ -817,15 +822,16 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s armv6s arm64";
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Debug;
 		};
 		EEC8287915DA1F4E0026B68A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/SalamaDataCore.dst;
+				ENABLE_BITCODE = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalamaDataCore/SalamaDataCore-Prefix.pch";
@@ -834,7 +840,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				VALID_ARCHS = "armv7 armv7s armv6s arm64";
+				VALID_ARCHS = "armv7 arm64";
 			};
 			name = Release;
 		};

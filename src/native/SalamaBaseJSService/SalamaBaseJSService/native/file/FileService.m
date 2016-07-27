@@ -81,9 +81,7 @@
 
 - (NSString *)readAllText:(NSString *)filePath
 {
-    [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:filePath] encoding:NSUTF8StringEncoding error:nil];
-    
-    return filePath;
+    return [NSString stringWithContentsOfURL:[NSURL fileURLWithPath:filePath] encoding:NSUTF8StringEncoding error:nil];
 }
 
 - (NSString *)writeTextToFile:(NSString *)filePath text:(NSString *)text

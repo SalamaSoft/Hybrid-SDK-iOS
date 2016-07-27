@@ -89,13 +89,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A1B936951D12A069008D857E /* CopyFiles */ = {
+		A1B936951D12A069008D857E /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -792,9 +793,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1B936A01D12A069008D857E /* Build configuration list for PBXNativeTarget "SalamaBaseApp" */;
 			buildPhases = (
-				A1B936931D12A069008D857E /* Sources */,
 				A1B936941D12A069008D857E /* Frameworks */,
-				A1B936951D12A069008D857E /* CopyFiles */,
+				A1B936951D12A069008D857E /* Copy Files */,
+				A1B936931D12A069008D857E /* Sources */,
 			);
 			buildRules = (
 			);
