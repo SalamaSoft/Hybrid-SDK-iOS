@@ -18,7 +18,94 @@
 	CC_MD5(cStr, (CC_LONG)strlen(cStr), result);
     
     //to compatible to Mysql's md5, make it to lowercase
-	return [[NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],result[8], result[9], result[10], result[11],result[12], result[13], result[14], result[15]] lowercaseString];
+    return [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],result[8], result[9], result[10], result[11],result[12], result[13], result[14], result[15]];
+}
+
+/*
++ (NSString *)md5Sum:(NSString *)filePath
+{
+    CFURLRef fileURL = CFURLCreateWithFileSystemPath(
+                                                     kCFAllocatorDefault,
+                                                     (__bridge CFStringRef)filePath,
+                                                     kCFURLPOSIXPathStyle,
+                                                     (Boolean)false
+                                                     );
+    @try {
+        CFReadStreamRef fileReader = CFReadStreamCreateWithFile(kCFAllocatorDefault, fileURL);
+        @try {
+            CC_MD5_CTX ctx;
+            CC_MD5_Init(&ctx);
+            
+            //read file
+            int buffLen = 1024;
+            uint8_t buffer[buffLen];
+            CFIndex readLen;
+            while(true)
+            {
+                readLen = CFReadStreamRead(fileReader, (UInt8 *)(&buffer[0]), (CFIndex)buffLen);
+                if(readLen < 0)
+                {
+                    //error in reading
+                    break;
+                }
+                if(readLen == 0)
+                {
+                    //read to end
+                    break;
+                }
+                
+                CC_MD5_Update(&ctx, (const void *)buffer, (CC_LONG)readLen);
+            }
+            
+            unsigned char result[16];
+            CC_MD5_Final(result, &ctx);
+            
+            return [[NSString stringWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X",result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],result[8], result[9], result[10], result[11],result[12], result[13], result[14], result[15]] lowercaseString];
+        } @finally {
+            if(fileReader)
+            {
+                CFReadStreamClose(fileReader);
+                CFRelease(fileReader);
+            }
+        }
+    } @finally {
+        if(fileURL)
+        {
+            CFRelease(fileURL);
+        }
+    }
+}
+ */
+
++ (NSString *)md5Sum:(NSString *)filePath
+{
+    NSFileHandle* fileReader = [NSFileHandle fileHandleForReadingAtPath:filePath];
+    @try {
+        CC_MD5_CTX ctx;
+        CC_MD5_Init(&ctx);
+        
+        //read file
+        int buffLen = 1024;
+        
+        NSData* fileData = nil;
+        while(true)
+        {
+            fileData = [fileReader readDataOfLength:buffLen];
+            if([fileData length] == 0)
+            {
+                break;
+            }
+            
+            CC_MD5_Update(&ctx, [fileData bytes], (CC_LONG)[fileData length]);
+        }
+        
+        unsigned char result[16];
+        CC_MD5_Final(result, &ctx);
+        
+        return [NSString stringWithFormat:@"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",result[0], result[1], result[2], result[3], result[4], result[5], result[6], result[7],result[8], result[9], result[10], result[11],result[12], result[13], result[14], result[15]];
+    } @finally {
+        [fileReader closeFile];
+    }
 }
 
 @end

@@ -15,4 +15,9 @@
  */
 + (NSString*)md5String:(NSString*)inputStr;
 
+/**
+ * 生成MD5 sum(结果与linux上md5sum相同)
+ */
++ (NSString*)md5Sum:(NSString*)filePath;
+
 @end
