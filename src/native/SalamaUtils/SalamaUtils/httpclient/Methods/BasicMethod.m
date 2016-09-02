@@ -29,8 +29,11 @@
 #import "DelegateMessenger.h"
 
 @interface BasicMethod()
+{
+    NSMutableCharacterSet* _charSetForEncodeURLComponentString;
+}
 
-+ (NSString *)encodeURLComponentString:(NSString *)urlStr encoding:(NSStringEncoding)encoding;
+- (NSString *)encodeURLComponentString:(NSString *)urlStr encoding:(NSStringEncoding)encoding;
 
 @end
 
@@ -39,6 +42,8 @@
 @synthesize requestTimeoutInterval;
 @synthesize encoding;
 
+
+
 -(id)init {
 	self = [super init];
 	
@@ -46,6 +51,10 @@
 		//Initialize the dictionary used for storing parameters
 		params = [[NSMutableDictionary alloc] init];
         self.encoding = NSUTF8StringEncoding;
+        
+        _charSetForEncodeURLComponentString = [[NSMutableCharacterSet alloc] init];
+        [_charSetForEncodeURLComponentString formUnionWithCharacterSet:[NSCharacterSet alphanumericCharacterSet]];
+        [_charSetForEncodeURLComponentString addCharactersInString:@"-._~"];
 	}
 	
 	return self;
@@ -83,13 +92,15 @@
 		}
 		
 		//Add the parameter(No need encode in "POST" method)
+        /*
         if(dataInBody)
         {
             [body appendData:[[NSString stringWithFormat:@"%@=%@", cKey, [params valueForKey:cKey]] dataUsingEncoding:encoding]];
         }
         else
+            */
         {
-            [body appendData:[[NSString stringWithFormat:@"%@=%@", cKey, [BasicMethod encodeURLComponentString:[params valueForKey:cKey] encoding:encoding]] dataUsingEncoding:encoding]];
+            [body appendData:[[NSString stringWithFormat:@"%@=%@", cKey, [self encodeURLComponentString:[params valueForKey:cKey] encoding:encoding]] dataUsingEncoding:encoding]];
         }
 	}
 	
@@ -188,11 +199,12 @@
 #endif
 }
 */
-+ (NSString *)encodeURLComponentString:(NSString *)urlStr encoding:(NSStringEncoding)encoding
+- (NSString *)encodeURLComponentString:(NSString *)urlStr encoding:(NSStringEncoding)encoding
 {
     // Encode all the reserved characters, per RFC 3986
     // (<http://www.ietf.org/rfc/rfc3986.txt>)
-    NSString* encodedStr =  [[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"];;
+    //NSString* encodedStr =  [[urlStr stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] stringByReplacingOccurrencesOfString:@"+" withString:@"%2B"] ;
+    NSString* encodedStr = [urlStr stringByAddingPercentEncodingWithAllowedCharacters:_charSetForEncodeURLComponentString];
 #ifdef CLANG_OBJC_ARC_DISABLED
 	return [encodedStr autorelease];
 #else
