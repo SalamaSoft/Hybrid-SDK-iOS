@@ -2,9 +2,10 @@
 
 .metadata/
 RemoteSystemsTempFiles/
-.DS_Store/
+.DS_Store
 bin/
 copyHeadersForRelease/
+*.xcuserstate
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
