@@ -194,7 +194,7 @@
 		
 		function encodeCmd(cmd) {
 			//因Android的WebView中，URL中的"!()*"需要转换为百分号编码，
-			//而JavaScript的encodeURIComponent中未转换这些字符，故需要自行处理。(Android的WebView开发团队大概没怎么用过JavaScript)
+			//而JavaScript的encodeURIComponent中未转换这些字符，故需要自行处理
 			return encodeURIComponent(cmd)
 				.replace(/!/g, '%21')
 				.replace(/\(/g, '%28')
